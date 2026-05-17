@@ -58,7 +58,7 @@ body {
 
 /* ─── 페이지 타이틀 ─── */
 .fc-page-title {
-  padding: 28px 19px 28px;
+  padding: 28px 19px 30px;
   display: flex;
   align-items: center;
 }
