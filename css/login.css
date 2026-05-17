@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Pretendard:wght@400;500;700&display=swap');
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { background: #111; }
+
+body {
+  font-family: 'Pretendard', sans-serif;
+  background: #fff;
+  max-width: 430px;
+  margin: 0 auto;
+  min-height: 100vh;
+}
+
+/* ─── Screen ─── */
+.screen {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background: #fff;
+  padding-bottom: 40px;
+}
+
+/* ─── 닫기 버튼 ─── */
+.close-btn {
+  position: absolute;
+  top: 58px;
+  right: 22px;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  font-family: 'Inter', sans-serif;
+  font-size: 21px;
+  font-weight: 200;
+  color: #000;
+  cursor: pointer;
+  line-height: 16.5px;
+  width: 14px;
+  padding: 0;
+  text-align: center;
+}
+
+/* ─── 로고 ─── */
+.logo-wrap {
+  display: flex;
+  justify-content: center;
+  padding-top: 86px;
+  margin-bottom: 44px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 1px;
+}
+
+.logo-txt {
+  font-family: Arial, sans-serif;
+  font-weight: 700;
+  color: #5a2e2a;
+  font-size: 30px;
+  line-height: 1;
+  letter-spacing: -0.5px;
+}
+
+.logo-r {
+  font-family: Arial, sans-serif;
+  font-weight: 700;
+  width: 26px;
+  height: 26px;
+  background: #ff8732;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 14px;
+  line-height: 1;
+  margin: 0 3px;
+}
+
+/* ─── 폼 영역 ─── */
+.form-wrap {
+  padding: 0 22px;
+}
+
+/* ─── 입력 필드 ─── */
+.input-field {
+  display: block;
+  width: 100%;
+  height: 52px;
+  border: 1px solid #e2e2e2;
+  background: #fff;
+  padding: 16px;
+  font-family: 'Pretendard', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: #171b1f;
+  outline: none;
+}
+
+.input-field::placeholder {
+  color: #c5c5c7;
+}
+
+.input-field + .input-field {
+  margin-top: 8px;
+}
+
+/* ─── 아이디/비밀번호 찾기 ─── */
+.find-link-wrap {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 13px;
+  margin-bottom: 50px;
+}
+
+.find-link {
+  font-size: 14px;
+  font-weight: 400;
+  color: #666;
+  text-decoration: none;
+  white-space: pre;
+}
+
+/* ─── 로그인 버튼 ─── */
+.btn-login {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 54px;
+  background: #121212;
+  border: none;
+  border-radius: 5px;
+  font-family: 'Pretendard', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* ─── 소셜 로그인 ─── */
+.social-wrap {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  margin-top: 44px;
+  margin-bottom: 43px;
+}
+
+.social-btn {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-btn svg {
+  width: 28px;
+  height: 28px;
+}
+
+.social-btn span {
+  font-family: Arial, sans-serif;
+  font-weight: 700;
+  font-size: 19px;
+  color: #fff;
+}
+
+.kakao {
+  background: #FEE500;
+}
+
+.kakao svg {
+  fill: #3C1E1E;
+}
+
+.naver {
+  background: #03C75A;
+}
+
+.point {
+  background: #E8003D;
+}
+
+.apple {
+  background: #000;
+}
+
+/* ─── 회원가입 버튼 ─── */
+.btn-signup {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 52px;
+  background: #fff;
+  border: 1px solid #e2e2e2;
+  font-family: 'Pretendard', sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  color: #000;
+  cursor: pointer;
+}
+
+/* ─── 하단 링크 ─── */
+.bottom-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 23px;
+}
+
+.bottom-link {
+  font-size: 14px;
+  font-weight: 400;
+  color: #777;
+  text-decoration: none;
+}
+
+.divider {
+  color: #ccc;
+  font-size: 14px;
+}

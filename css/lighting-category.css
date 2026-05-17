@@ -1,0 +1,421 @@
+@import url('https://fonts.googleapis.com/css2?family=Pretendard:wght@400;500;600;700&display=swap');
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: 'Pretendard', 'Noto Sans KR', sans-serif;
+  background: #f0f0f0;
+  display: flex;
+  justify-content: center;
+}
+
+.page-wrap {
+  width: 430px;
+  min-height: 100vh;
+  background: #fff;
+  overflow-x: hidden;
+  padding-bottom: 83px;
+}
+
+/* ─── 헤더 ─── */
+.lc-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 53px;
+  padding: 0 10px;
+}
+
+.lc-header-back {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 37px;
+  height: 48px;
+  font-size: 24px;
+  font-weight: 600;
+  color: #000;
+  text-decoration: none;
+}
+
+.lc-header-title {
+  font-size: 15px;
+  font-weight: 400;
+  color: #000;
+  letter-spacing: -0.45px;
+  line-height: 28px;
+}
+
+.lc-header-spacer {
+  width: 37px;
+}
+
+/* ─── 페이지 타이틀 ─── */
+.lc-page-title {
+  padding: 15px 19px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.lc-page-title p {
+  font-size: 22px;
+  font-weight: 600;
+  color: #000;
+  line-height: 28px;
+}
+
+/* ─── 히어로 비주얼 ─── */
+.lc-hero {
+  position: relative;
+  width: 430px;
+  height: 428px;
+  overflow: hidden;
+  margin-top: 19px;
+}
+
+.lc-hero-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.lc-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.27);
+}
+
+.lc-hero-text {
+  position: absolute;
+  top: 48px;
+  left: 37px;
+  font-size: 23px;
+  font-weight: 600;
+  color: #fff;
+  line-height: 28px;
+}
+
+/* ─── 추천 상품 가로 스크롤 ─── */
+.lc-scroll-section {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-snap-type: x mandatory;
+  padding: 0 19px;
+  height: 281px;
+  scrollbar-width: none;
+}
+
+.lc-scroll-section::-webkit-scrollbar { display: none; }
+
+.lc-card {
+  display: flex;
+  flex-direction: column;
+  width: 161px;
+  flex-shrink: 0;
+  scroll-snap-align: start;
+}
+
+.lc-card-img-wrap {
+  position: relative;
+  width: 161px;
+  height: 160px;
+  border: 1px solid rgba(148,148,148,0.11);
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.lc-card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.lc-card-heart {
+  position: absolute;
+  bottom: 5px;
+  left: 6px;
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
+.lc-card-info {
+  background: #fff;
+  height: 121px;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  padding-top: 1px;
+  overflow: hidden;
+}
+
+/* ─── 공통 상품 텍스트 ─── */
+.lc-brand {
+  font-size: 14px;
+  font-weight: 400;
+  color: #b2b1b1;
+  line-height: 20.5px;
+  height: 23px;
+  display: flex;
+  align-items: center;
+}
+
+.lc-name {
+  font-size: 14px;
+  font-weight: 500;
+  color: #000;
+  line-height: 20.5px;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.lc-price {
+  font-size: 13px;
+  font-weight: 600;
+  color: #000;
+  line-height: 20.5px;
+  height: 23px;
+  display: flex;
+  align-items: center;
+}
+
+.lc-price em {
+  font-style: normal;
+  font-size: 16px;
+  color: #662626;
+}
+
+/* ─── 상품 그리드 섹션 ─── */
+.lc-grid-section {
+  padding: 27px 17px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 31px;
+}
+
+/* 필터 칩 행 */
+.lc-filter-row {
+  display: flex;
+  align-items: center;
+  overflow-x: auto;
+  scrollbar-width: none;
+  height: 45px;
+  gap: 7px;
+}
+
+.lc-filter-row::-webkit-scrollbar { display: none; }
+
+.lc-chip {
+  height: 38px;
+  border-radius: 60px;
+  border: 1px solid #e2e2e2;
+  background: #fff;
+  font-family: 'Pretendard', 'Noto Sans KR', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: #666;
+  line-height: 20.5px;
+  padding: 0 17px;
+  white-space: nowrap;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.lc-chip--active {
+  border-color: #000;
+  color: #000;
+  font-size: 12px;
+  padding: 0 16px;
+}
+
+.lc-chip-divider {
+  display: flex;
+  align-items: center;
+  height: 30px;
+  flex-shrink: 0;
+}
+
+.lc-chip-divider img {
+  height: 30px;
+  object-fit: contain;
+}
+
+.lc-filter-icon-btn {
+  width: 39px;
+  height: 39px;
+  border-radius: 50%;
+  border: 1px solid #e3e3e3;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  cursor: pointer;
+  padding: 0;
+  margin-left: auto;
+}
+
+.lc-filter-icon-btn img {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
+/* 건수 + 정렬 */
+.lc-sort-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.lc-count {
+  font-size: 14px;
+  font-weight: 500;
+  color: #000;
+  line-height: 20.5px;
+}
+
+.lc-count strong {
+  font-weight: 600;
+  color: #5a2e2a;
+}
+
+.lc-sort-btn {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  background: none;
+  border: none;
+  font-family: 'Pretendard', 'Noto Sans KR', sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  color: #000;
+  line-height: 20.5px;
+  cursor: pointer;
+}
+
+.lc-sort-btn img {
+  width: 16px;
+  height: 18px;
+  object-fit: contain;
+}
+
+/* 2열 그리드 */
+.lc-product-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px 16px;
+  padding-bottom: 20px;
+}
+
+.lc-grid-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.lc-grid-img-wrap {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 192 / 160;
+  border: 1px solid rgba(148,148,148,0.11);
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.lc-grid-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.lc-grid-point {
+  position: absolute;
+  bottom: 3px;
+  right: 3px;
+  width: 26px;
+  height: 22px;
+  object-fit: contain;
+}
+
+.lc-grid-heart {
+  position: absolute;
+  bottom: 5px;
+  left: 5px;
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
+.lc-grid-info {
+  background: #fff;
+  height: 124px;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  padding-top: 1px;
+  overflow: hidden;
+}
+
+.lc-grid-desc {
+  font-size: 12px;
+  font-weight: 500;
+  color: #000;
+  line-height: 20.5px;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* ─── 하단 네비게이션 ─── */
+.lc-bottom-nav {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 430px;
+  height: 83px;
+  background: #5a2e2a;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+  padding: 0 53px 12px;
+}
+
+.lc-nav-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 16.5px;
+  padding-bottom: 2px;
+}
+
+.lc-nav-item img {
+  width: 22px;
+  height: 22px;
+  object-fit: contain;
+}
+
+.lc-nav-item--active {
+  color: #ff8732;
+}

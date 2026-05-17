@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <title>앱 소개 — 집리셋</title>
+  <link rel="stylesheet" href="css/app-overview.css">
+</head>
+<body>
+  <div class="screen">
+
+    <!-- 헤더 -->
+    <header class="app-header">
+      <div class="header-inner">
+        <a class="back-btn" href="#">&lt;</a>
+        <div class="header-logo"></div>
+        <div class="header-icons">
+          <svg viewBox="0 0 24 24"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 002 1.61h9.72a2 2 0 001.97-1.67L23 6H6"/></svg>
+          <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><line x1="16.5" y1="16.5" x2="22" y2="22"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M18 8A6 6 0 006 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 01-3.46 0"/></svg>
+        </div>
+      </div>
+    </header>
+
+    <!-- Visual 1: 히어로 -->
+    <section class="hero-visual">
+      <div class="hero-bg-wrap">
+        <img class="hero-bg-img" src="https://www.figma.com/api/mcp/asset/711a5178-7211-41b7-8e26-4f9ac84c7c0c" alt="">
+      </div>
+      <div class="hero-gradient"></div>
+      <div class="hero-brand">ZipReset</div>
+      <div class="hero-subtitle">
+        <p class="hero-tagline">"비움으로 가치를 찾고, 데이터로 공간을 채우다"</p>
+        <p class="hero-desc">AI 공간 분석과 맞춤형 큐레이션으로 완성하는<br>당신만의 프리미엄 라이프스타일 매니지먼트.</p>
+      </div>
+    </section>
+
+    <!-- Visual 2: 데이터 기반 공간 관리 -->
+    <section class="dark-visual">
+      <div class="dark-bg-wrap">
+        <img class="dark-bg-img" src="https://www.figma.com/api/mcp/asset/ae5a513f-6118-4290-8b9d-66c1d205b84b" alt="">
+      </div>
+      <div class="dark-overlay">
+        <div class="dark-content">
+          <h2 class="dark-title">데이터 기반의 정밀한<br>공간 관리</h2>
+          <p class="dark-desc">정교한 공간 데이터 분석으로<br>단순한 청소를 넘어 공간의 효율성과<br>흐름을 수치화하고, 비움과 채움의 균형을<br>통해 지속 가능한 집의 순환 구조를 만듭니다.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 섹션 타이틀: 왜 집리셋 -->
+    <div class="why-title-wrap">
+      <h2 class="why-title">왜, 지금 집리셋이 필요한가</h2>
+    </div>
+
+    <!-- AI 공간 진단 리포트 -->
+    <section class="ai-report">
+      <div class="report-top">
+        <div>
+          <p class="report-sub">AI 공간 진단 리포트</p>
+          <p class="report-main-title">거실 공간 상태</p>
+        </div>
+        <img class="report-icon" src="https://www.figma.com/api/mcp/asset/d63f3d06-1df4-4d23-a2c2-477b33d4b9b7" alt="">
+      </div>
+
+      <!-- 도넛 차트 -->
+      <div class="donut-wrap">
+        <svg class="donut-svg" viewBox="0 0 160 160">
+          <!-- 배경 링: 연한 오렌지 -->
+          <circle cx="80" cy="80" r="62" fill="none" stroke="#ffe0c3" stroke-width="6"/>
+          <!-- 오렌지 아크: 85% (circumference ≈ 389.56, 85% ≈ 331.13) -->
+          <circle cx="80" cy="80" r="62" fill="none" stroke="#ff8732" stroke-width="6"
+            stroke-dasharray="331.1 58.5" stroke-linecap="round"
+            transform="rotate(-90 80 80)"/>
+          <!-- 중앙 텍스트 -->
+          <foreignObject x="0" y="0" width="160" height="160">
+            <div xmlns="http://www.w3.org/1999/xhtml" style="width:100%;height:100%;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:4px;">
+              <div style="width:100%;height:auto;justify-content:center;display:flex;flex-direction:column;align-items:center;color:#5A2E2A;font-size:48px;font-family:Manrope,sans-serif;font-weight:800;line-height:48px;word-wrap:break-word;text-align:center;">85</div>
+              <div style="color:#5A2E2A;font-size:11px;font-family:Pretendard,sans-serif;font-weight:400;letter-spacing:1.2px;text-align:center;">최적화됨</div>
+            </div>
+          </foreignObject>
+        </svg>
+      </div>
+
+      <!-- 진행 바 -->
+      <div class="progress-bars">
+        <div class="progress-item">
+          <div class="progress-meta">
+            <span class="progress-label">정리 효율성</span>
+            <span class="progress-value">92%</span>
+          </div>
+          <div class="progress-track">
+            <div class="progress-fill" style="width:92%"></div>
+          </div>
+        </div>
+        <div class="progress-item">
+          <div class="progress-meta">
+            <span class="progress-label">심미적 밸런스</span>
+            <span class="progress-value">78%</span>
+          </div>
+          <div class="progress-track">
+            <div class="progress-fill" style="width:78%"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Special Features -->
+    <section class="features-section">
+
+      <!-- 특징 이미지 -->
+      <div class="features-img-wrap">
+        <img class="features-img" src="https://www.figma.com/api/mcp/asset/d511c87a-c7cd-4a09-9d43-97d38e953175" alt="">
+        <div class="features-img-overlay"></div>
+        <div class="features-preview-card">
+          <p class="preview-badge">FEATURE PREVIEW</p>
+          <p class="preview-text">AR 기술을 통한 공간 시뮬레이션</p>
+        </div>
+      </div>
+
+      <!-- 특징 목록 -->
+      <div class="features-list">
+        <div class="feature-item">
+          <div class="feature-icon-wrap">
+            <svg viewBox="0 0 28 28" fill="none">
+              <path d="M14 4a10 10 0 100 20A10 10 0 0014 4z" stroke="#5a2e2a" stroke-width="1.6"/>
+              <path d="M14 8v6l4 2" stroke="#5a2e2a" stroke-width="1.6" stroke-linecap="round"/>
+              <path d="M9 3l-3 3 3 3M19 3l3 3-3 3" stroke="#ff8732" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <div class="feature-text">
+            <h3 class="feature-title">비움 사이클</h3>
+            <p class="feature-desc">체계적 비움, 채움 플랜. 무조건적인 미니멀리즘이 아닌, 당신의 취향이 온전히 드러날 수 있는 선별적 채움을 제안합니다.</p>
+          </div>
+        </div>
+        <div class="feature-item">
+          <div class="feature-icon-wrap">
+            <svg viewBox="0 0 28 28" fill="none">
+              <rect x="3" y="8" width="22" height="13" rx="3" stroke="#5a2e2a" stroke-width="1.6"/>
+              <circle cx="9" cy="14" r="2.5" fill="#5a2e2a"/>
+              <circle cx="19" cy="14" r="2.5" fill="#5a2e2a"/>
+              <path d="M12 14h4" stroke="#ff8732" stroke-width="1.6" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <div class="feature-text">
+            <h3 class="feature-title">VR 가상 배치</h3>
+            <p class="feature-desc">물건을 사기 전, 우리 집에 어울리는지 3D로 미리 배치하세요. 오차 없는 정밀한 측정으로 공간 낭비를 방지합니다.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 집리셋 관리 타이틀 -->
+    <div class="mgmt-title-wrap">
+      <h2 class="mgmt-title">집리셋은 이렇게<br>공간을 관리해요</h2>
+    </div>
+
+    <!-- 01/02/03 관리 방법 -->
+    <section class="mgmt-section">
+      <div class="mgmt-item">
+        <div class="mgmt-badge">
+          <span class="mgmt-num">01</span>
+          <span class="mgmt-label">공간 가치 극대화</span>
+        </div>
+        <p class="mgmt-desc">단순한 거주지를 넘어 삶의 영감을 주는 자산으로서의 공간을 관리합니다.</p>
+      </div>
+      <div class="mgmt-item">
+        <div class="mgmt-badge">
+          <span class="mgmt-num">02</span>
+          <span class="mgmt-label">전담 큐레이터 매칭</span>
+        </div>
+        <p class="mgmt-desc">당신의 라이프스타일을 완벽히 이해하는 전문가가 모든 과정을 동행합니다.</p>
+      </div>
+      <div class="mgmt-item">
+        <div class="mgmt-badge">
+          <span class="mgmt-num">03</span>
+          <span class="mgmt-label">시간의 자유 보장</span>
+        </div>
+        <p class="mgmt-desc">공간 관리의 번거로움을 자동화하여 당신의 소중한 시간을 확보해드립니다.</p>
+      </div>
+    </section>
+
+    <!-- 함께하는 집리셋 경험 -->
+    <section class="testimonials">
+      <h2 class="testimonials-title">함께하는 집리셋 경험</h2>
+      <div class="testimonials-scroll">
+        <div class="testimonial-card">
+          <div class="testimonial-profile">
+            <div class="profile-avatar">
+              <svg viewBox="0 0 37 37" fill="none"><ellipse cx="18.5" cy="18.5" rx="18.5" ry="18.5" fill="#e8e0f7"/><circle cx="18.5" cy="14" r="7" fill="#b39ddb"/><ellipse cx="18.5" cy="28" rx="11" ry="8" fill="#b39ddb"/></svg>
+            </div>
+            <div class="profile-info">
+              <p class="profile-name">박서준 님</p>
+              <p class="profile-role">IT 기획자</p>
+            </div>
+          </div>
+          <p class="testimonial-text">"퇴근 후 정리에 쏟을 에너지가 늘 부족했는데, 집리셋이 찾아준 <strong>'120cm의 여백'</strong> 덕분에 집이 훨씬 넓어 보이고 동선이 편해졌어요. 단순히 버리는 게 아니라 내 삶에 꼭 필요한 것들로만 채워지는 기분입니다."</p>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-profile">
+            <div class="profile-avatar">
+              <svg viewBox="0 0 37 37" fill="none"><ellipse cx="18.5" cy="18.5" rx="18.5" ry="18.5" fill="#e8e0f7"/><circle cx="18.5" cy="14" r="7" fill="#b39ddb"/><ellipse cx="18.5" cy="28" rx="11" ry="8" fill="#b39ddb"/></svg>
+            </div>
+            <div class="profile-info">
+              <p class="profile-name">김지현 님</p>
+              <p class="profile-role">마케터</p>
+            </div>
+          </div>
+          <p class="testimonial-text">"퇴근 후에는 정리할 힘이 없었는데, 집리셋 덕분에 공간이 훨씬 단순해졌어요. 물건이 줄어드니까 생각도 같이 정리되는 느낌이에요."</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section">
+      <div class="cta-inner">
+        <h2 class="cta-title">새로운 일상의 시작</h2>
+        <p class="cta-desc">지금 바로 AI 진단을 시작하고 프리미엄<br>홈 케어를 경험하세요.</p>
+        <button class="cta-btn">첫 공간 진단 받기</button>
+      </div>
+    </section>
+
+  </div>
+</body>
+</html>

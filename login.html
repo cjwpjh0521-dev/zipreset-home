@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <title>로그인 — 집리셋</title>
+  <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+  <div class="screen">
+
+    <!-- 닫기 버튼 -->
+    <button class="close-btn" onclick="history.back()">✕</button>
+
+    <!-- 로고 -->
+    <div class="logo-wrap">
+      <div class="logo">
+        <span class="logo-txt">ZIP</span>
+        <span class="logo-r">R</span>
+        <span class="logo-txt">ESET</span>
+      </div>
+    </div>
+
+    <!-- 입력 폼 -->
+    <div class="form-wrap">
+      <input class="input-field" type="email" placeholder="아이디(이메일)를 입력해 주세요." value="ABC@naver.com">
+      <input class="input-field" type="password" placeholder="비밀번호를 입력해주세요." value="password123">
+
+      <div class="find-link-wrap">
+        <a href="#" class="find-link">아이디/비밀번호  찾기</a>
+      </div>
+
+      <!-- 로그인 버튼 -->
+      <button class="btn-login">로그인</button>
+    </div>
+
+    <!-- 소셜 로그인 -->
+    <div class="social-wrap">
+      <button class="social-btn kakao">
+        <svg viewBox="0 0 24 24" fill="#3C1E1E"><path d="M12 3C6.477 3 2 6.477 2 10.8c0 2.7 1.6 5.08 4 6.55l-.98 3.65 4.2-2.77c.9.16 1.83.25 2.78.25 5.523 0 10-3.477 10-7.8S17.523 3 12 3z"/></svg>
+      </button>
+      <button class="social-btn naver">
+        <span>N</span>
+      </button>
+      <button class="social-btn point">
+        <span>P</span>
+      </button>
+      <button class="social-btn apple">
+        <svg viewBox="0 0 24 24" fill="white"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+      </button>
+    </div>
+
+    <!-- 회원가입 버튼 -->
+    <div class="form-wrap">
+      <button class="btn-signup">회원가입</button>
+    </div>
+
+    <!-- 하단 링크 -->
+    <div class="bottom-links">
+      <a href="#" class="bottom-link">비회원 주문조회</a>
+      <span class="divider">|</span>
+      <a href="#" class="bottom-link">비회원/취소/반품/교환</a>
+    </div>
+
+  </div>
+</body>
+</html>

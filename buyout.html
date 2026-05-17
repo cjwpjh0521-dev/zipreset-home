@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <title>중고매입 — 집리셋</title>
+  <link rel="stylesheet" href="css/buyout.css">
+</head>
+<body>
+  <div class="screen">
+
+    <!-- 헤더 -->
+    <header class="bo-header">
+      <a class="back-btn" href="javascript:history.back()">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#000" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="width:22px;height:22px;"><polyline points="15 18 9 12 15 6"/></svg>
+      </a>
+      <div class="bo-logo"></div>
+      <div class="bo-header-icons">
+        <img src="https://www.figma.com/api/mcp/asset/80c7ec97-25d9-4357-8535-b6dd46a9fcfe" alt="장바구니" class="header-icon">
+        <img src="https://www.figma.com/api/mcp/asset/2b65f129-ca7e-4b1d-93fb-9ed9ec5f9047" alt="검색" class="header-icon" style="width:23px;height:22px;">
+        <img src="https://www.figma.com/api/mcp/asset/28644207-0916-4068-8de2-305230a0fffe" alt="알림" class="header-icon">
+      </div>
+    </header>
+
+    <!-- 히어로 -->
+    <section class="bo-hero">
+      <div class="hero-bg-wrap">
+        <img class="hero-bg-img" src="https://www.figma.com/api/mcp/asset/9901a8b5-3592-4969-9766-e6886a9202f2" alt="">
+      </div>
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <div class="hero-text-box">
+          <h2 class="hero-title">내 가구의 가치를<br>확인하세요</h2>
+          <p class="hero-desc">전문 감정사가 제안하는 합리적인 중고<br>매입 서비스를 지금 경험해보세요.</p>
+        </div>
+        <button class="hero-btn">
+          <img src="https://www.figma.com/api/mcp/asset/ad6bfd12-5a99-4afa-83b7-748048aab6d7" alt="" class="hero-btn-icon">
+          내 가구 시세 조회하기
+        </button>
+      </div>
+    </section>
+
+    <!-- 매입 가능 카테고리 -->
+    <section class="bo-category">
+      <div class="category-title-box">
+        <h2 class="section-title">매입 가능 카테고리</h2>
+        <p class="section-sub">다양한 품목으로 전문적으로 취급한다</p>
+      </div>
+      <div class="cat-grid">
+        <div class="cat-card">
+          <img src="https://www.figma.com/api/mcp/asset/112a44d6-6705-4026-b54c-1124ab3ea291" alt="" class="cat-icon" style="width:38px;height:35px;">
+          <span class="cat-label">가구 / 가전</span>
+        </div>
+        <div class="cat-card">
+          <img src="https://www.figma.com/api/mcp/asset/4773fa73-fa28-47f6-852f-e9101ae1ac4c" alt="" class="cat-icon" style="width:38px;height:35px;">
+          <span class="cat-label">주방용품</span>
+        </div>
+        <div class="cat-card">
+          <img src="https://www.figma.com/api/mcp/asset/26215656-1025-4aef-bb7c-0d612c2e095d" alt="" class="cat-icon" style="width:38px;height:35px;">
+          <span class="cat-label">사무용품</span>
+        </div>
+        <div class="cat-card">
+          <img src="https://www.figma.com/api/mcp/asset/602c47e8-19c0-4816-aa67-db7114952838" alt="" class="cat-icon" style="width:42px;height:47px;">
+          <span class="cat-label">수납/정리 용품</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- 간편한 서비스 프로세스 -->
+    <section class="bo-process">
+      <h2 class="process-title">간편한 서비스 프로세스</h2>
+      <div class="process-steps">
+        <div class="process-divider"></div>
+        <div class="process-step">
+          <div class="step-circle"><span class="step-num">1</span></div>
+          <div class="step-info">
+            <p class="step-name">사진 업로드</p>
+            <p class="step-desc">제품의 전체샷과 상세 정보를 등록합니다.</p>
+          </div>
+        </div>
+        <div class="process-step">
+          <div class="step-circle"><span class="step-num">2</span></div>
+          <div class="step-info">
+            <p class="step-name">전문 감정사 진단</p>
+            <p class="step-desc">24시간 내에 예상 매입가를 제안드립니다.</p>
+          </div>
+        </div>
+        <div class="process-step">
+          <div class="step-circle"><span class="step-num">3</span></div>
+          <div class="step-info">
+            <p class="step-name">수거 및 입금</p>
+            <p class="step-desc">원하는 시간에 수거 후 즉시 입금됩니다.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 나의 신청 현황 -->
+    <section class="bo-status">
+      <h2 class="status-title">나의 신청 현황</h2>
+      <div class="status-scroll">
+        <div class="status-card">
+          <div class="status-img-wrap">
+            <img src="https://www.figma.com/api/mcp/asset/48712bc2-22df-4c2c-96c4-bc82cb31d471" alt="원목 의자" class="status-img">
+            <img src="https://www.figma.com/api/mcp/asset/785abac6-a302-4c9e-8ccf-fa6a2bdfba0c" alt="찜" class="heart-icon">
+          </div>
+          <div class="status-info">
+            <p class="status-brand">집리셋</p>
+            <p class="status-name">원목 의자</p>
+            <p class="status-date">신청일: 2026.04.09</p>
+            <p class="status-price"><span class="price-main">240,000</span>원</p>
+          </div>
+        </div>
+        <div class="status-card">
+          <div class="status-img-wrap">
+            <img src="https://www.figma.com/api/mcp/asset/4db8bdf2-fd2e-4dfc-ae35-0269d943f598" alt="3인용 페브릭 소파" class="status-img">
+            <img src="https://www.figma.com/api/mcp/asset/785abac6-a302-4c9e-8ccf-fa6a2bdfba0c" alt="찜" class="heart-icon">
+          </div>
+          <div class="status-info">
+            <p class="status-brand">집리셋</p>
+            <p class="status-name">3인용 페브릭 소파</p>
+            <p class="status-date">신청일: 2025.12.15</p>
+            <p class="status-price"><span class="price-main">1,800,000</span>원</p>
+          </div>
+        </div>
+        <div class="status-card">
+          <div class="status-img-wrap">
+            <img src="https://www.figma.com/api/mcp/asset/c0d9dcd5-1915-4ea6-82b4-bb7d0048d3fc" alt="3단 이동식 수납 서랍장" class="status-img">
+            <img src="https://www.figma.com/api/mcp/asset/785abac6-a302-4c9e-8ccf-fa6a2bdfba0c" alt="찜" class="heart-icon">
+          </div>
+          <div class="status-info">
+            <p class="status-brand">집리셋</p>
+            <p class="status-name">3단 이동식 수납 서랍장</p>
+            <p class="status-date">신청일: 2025.08.23</p>
+            <p class="status-price"><span class="price-main">예상가 80,000</span><span class="price-won">원</span></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 대량 매입 CTA -->
+    <section class="bo-cta">
+      <h2 class="cta-title">대량 매입이 필요하신가요?</h2>
+      <p class="cta-desc">이사나 사무실 정리 시 한꺼번에 해결하세요</p>
+      <button class="cta-btn">상담 신청하기</button>
+    </section>
+
+  </div>
+</body>
+</html>

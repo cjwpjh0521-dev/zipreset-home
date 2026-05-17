@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <title>마이페이지 — 집리셋</title>
+  <link rel="stylesheet" href="css/mypage.css">
+</head>
+<body>
+  <div class="screen">
+
+    <!-- 헤더 -->
+    <header class="header">
+      <div class="logo">
+        <span class="logo-txt">ZIP</span>
+        <span class="logo-r">R</span>
+        <span class="logo-txt">ESET</span>
+      </div>
+      <div class="header-icons">
+        <svg viewBox="0 0 24 24"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+        <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><line x1="16.5" y1="16.5" x2="22" y2="22"/></svg>
+        <svg viewBox="0 0 24 24"><path d="M18 8A6 6 0 006 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 01-3.46 0"/></svg>
+      </div>
+    </header>
+
+    <main>
+
+      <!-- 프로필 카드 -->
+      <div class="profile-card">
+        <div class="profile-avatar-wrap">
+          <div class="profile-avatar">
+            <svg viewBox="0 0 96 92" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <ellipse cx="48" cy="46" rx="48" ry="46" fill="#e8e0f7"/>
+              <circle cx="48" cy="36" r="18" fill="#b39ddb"/>
+              <ellipse cx="48" cy="72" rx="28" ry="20" fill="#b39ddb"/>
+            </svg>
+          </div>
+          <button class="edit-btn">
+            <svg viewBox="0 0 12 12" fill="none"><path d="M8.5 1.5l2 2-7 7H1.5v-2l7-7z" stroke="#fff" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+        </div>
+        <div class="profile-info">
+          <div class="profile-name-row">
+            <span class="profile-name">김희망</span>
+            <span class="profile-role">Estate Curator</span>
+          </div>
+          <p class="profile-email">kim.curator@example.com</p>
+          <button class="btn-manage">내 정보 관리</button>
+        </div>
+      </div>
+
+      <!-- 주문 관리 -->
+      <section class="menu-section">
+        <h2 class="menu-section-title">주문 관리</h2>
+        <div class="menu-grid">
+          <a href="#" class="menu-link">주문·배송 내역</a>
+          <a href="#" class="menu-link">취소·반품·교환 내역</a>
+          <a href="#" class="menu-link">계단운반비 조회</a>
+        </div>
+        <hr class="divider">
+      </section>
+
+      <!-- 나의 혜택 -->
+      <section class="menu-section">
+        <h2 class="menu-section-title">나의 혜택</h2>
+        <div class="menu-grid">
+          <a href="#" class="menu-link">쿠폰, 포인트</a>
+          <a href="#" class="menu-link">쿠폰, 포인트 선물</a>
+          <a href="#" class="menu-link">상품권</a>
+        </div>
+        <hr class="divider">
+      </section>
+
+      <!-- 나의 활동 -->
+      <section class="menu-section">
+        <h2 class="menu-section-title">나의 활동</h2>
+        <div class="menu-grid">
+          <a href="#" class="menu-link">찜</a>
+          <a href="#" class="menu-link">최근 본 상품</a>
+          <a href="#" class="menu-link">상품 후기</a>
+          <a href="#" class="menu-link">재입고 알림 신청 내역</a>
+          <a href="#" class="menu-link">상품문의</a>
+        </div>
+        <hr class="divider">
+      </section>
+
+      <!-- 고객센터 -->
+      <section class="menu-section">
+        <h2 class="menu-section-title">고객센터 <span class="arrow">&gt;</span></h2>
+        <div class="menu-grid">
+          <a href="#" class="menu-link">1:1 문의</a>
+          <a href="#" class="menu-link">A/S 문의</a>
+          <a href="#" class="menu-link">설정</a>
+          <a href="#" class="menu-link">공지사항</a>
+        </div>
+        <hr class="divider">
+      </section>
+
+    </main>
+
+    <!-- 하단 내비게이션 -->
+    <nav class="bottom-nav">
+      <div class="nav-inner">
+        <div class="nav-item">
+          <svg viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+          <span>카테고리</span>
+        </div>
+        <div class="nav-item">
+          <svg viewBox="0 0 24 24"><polyline points="3 6 5 6 21 6"/><path d="M19 6l-1 14H6L5 6"/><path d="M10 11v6M14 11v6"/><path d="M9 6V4h6v2"/></svg>
+          <span>비움</span>
+        </div>
+        <div class="nav-home-wrap">
+          <a href="index.html" class="nav-home-btn">
+            <svg viewBox="0 0 24 24" fill="white"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>
+          </a>
+          <span>홈</span>
+        </div>
+        <div class="nav-item">
+          <svg viewBox="0 0 24 24"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 002 1.61h9.72a2 2 0 001.97-1.67L23 6H6"/></svg>
+          <span>채움</span>
+        </div>
+        <div class="nav-item active">
+          <svg viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+          <span>마이</span>
+        </div>
+      </div>
+    </nav>
+
+  </div>
+</body>
+</html>

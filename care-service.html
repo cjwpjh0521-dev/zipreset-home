@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <title>케어 서비스 — 집리셋</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pretendard:wght@400;500;600;700&family=Manrope:wght@800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/care-service.css">
+</head>
+<body>
+  <div class="page-wrap">
+
+    <!-- ─── 헤더 ─── -->
+    <header class="cs-header">
+      <a href="javascript:history.back()" class="cs-header-back">&#60;</a>
+      <span class="cs-header-title">케어 서비스</span>
+      <span class="cs-header-spacer"></span>
+    </header>
+
+    <!-- ─── 히어로 비주얼 ─── -->
+    <section class="cs-hero">
+      <img src="images/cs-hero-bg.png" alt="케어 서비스 배경" class="cs-hero-img">
+      <div class="cs-hero-gradient"></div>
+      <div class="cs-hero-text">
+        <p>정리된 공간을</p>
+        <p>오래 유지하세요</p>
+      </div>
+    </section>
+
+    <!-- ─── 공간 상태 카드 ─── -->
+    <div class="cs-status-card">
+      <p class="cs-status-label">공간 상태</p>
+      <div class="cs-status-score">
+        <em>92</em><span>%</span>
+      </div>
+      <p class="cs-status-sub">Premium Space Reset Experience</p>
+      <div class="cs-status-tags">
+        <span class="cs-tag cs-tag--dark">최적화됨</span>
+        <span class="cs-tag cs-tag--light">오늘 할 일 1건</span>
+      </div>
+    </div>
+
+    <!-- ─── 내 케어 현황 ─── -->
+    <section class="cs-care-section">
+      <div class="cs-care-header">
+        <p class="cs-care-title">내 케어 현황</p>
+        <a href="#" class="cs-care-more">전체보기</a>
+      </div>
+      <div class="cs-schedule-card">
+        <div class="cs-schedule-left">
+          <div class="cs-schedule-icon-wrap">
+            <img src="images/cs-schedule-icon.png" alt="" class="cs-schedule-icon">
+          </div>
+          <div class="cs-schedule-info">
+            <span class="cs-schedule-label">다음 일정</span>
+            <span class="cs-schedule-date">내일, 13:00 PM</span>
+            <span class="cs-schedule-name">가전 정밀 세척</span>
+          </div>
+        </div>
+        <img src="images/cs-arrow-icon.png" alt="" class="cs-schedule-arrow">
+      </div>
+    </section>
+
+    <!-- ─── 서비스 카드 목록 ─── -->
+    <section class="cs-service-list">
+
+      <!-- 가전 분해 청소 -->
+      <div class="cs-service-card">
+        <div class="cs-service-top">
+          <div class="cs-service-icon-wrap">
+            <img src="images/cs-service1-icon.png" alt="" class="cs-service-icon">
+          </div>
+          <button class="cs-reserve-btn">예약하기</button>
+        </div>
+        <p class="cs-service-name">가전 분해 청소</p>
+        <p class="cs-service-desc">보이지 않는 곳까지 깨끗하게</p>
+        <div class="cs-progress-track">
+          <div class="cs-progress-fill"></div>
+        </div>
+      </div>
+
+      <!-- 가구 살균 케어 -->
+      <div class="cs-service-card">
+        <div class="cs-service-top">
+          <div class="cs-service-icon-wrap">
+            <img src="images/cs-service2-icon.png" alt="" class="cs-service-icon">
+          </div>
+          <button class="cs-reserve-btn">예약하기</button>
+        </div>
+        <p class="cs-service-name">가구 살균 케어</p>
+        <p class="cs-service-desc">진드기 및 유해물질 완벽 차단</p>
+        <div class="cs-progress-track">
+          <div class="cs-progress-fill"></div>
+        </div>
+      </div>
+
+      <!-- 설치 & 수리 -->
+      <div class="cs-service-card">
+        <div class="cs-service-top">
+          <div class="cs-service-icon-wrap">
+            <img src="images/cs-service2-icon.png" alt="" class="cs-service-icon">
+          </div>
+          <button class="cs-reserve-btn">예약하기</button>
+        </div>
+        <p class="cs-service-name">설치 &amp; 수리</p>
+        <p class="cs-service-desc">전문가의 손길로 꼼꼼하게</p>
+        <div class="cs-progress-track">
+          <div class="cs-progress-fill"></div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- ─── 프로모션 카드 ─── -->
+    <div class="cs-promo-card">
+      <div class="cs-promo-text">
+        <p class="cs-promo-label">Premium Insight</p>
+        <p class="cs-promo-title">여름 대비 에어컨 청소<br>20% 할인</p>
+        <p class="cs-promo-sub">시즌 맞이 얼리버드 한정 혜택</p>
+      </div>
+      <div class="cs-promo-icon-wrap">
+        <img src="images/cs-promo-icon.png" alt="" class="cs-promo-icon">
+      </div>
+    </div>
+
+    <!-- ─── 하단 네비게이션 ─── -->
+    <nav class="cs-bottom-nav">
+      <a href="index.html" class="cs-nav-item">
+        <img src="images/cs-nav-home.png" alt="홈">
+        <span>홈</span>
+      </a>
+      <a href="category.html" class="cs-nav-item">
+        <img src="images/cs-nav-category.png" alt="카테고리">
+        <span>카테고리</span>
+      </a>
+      <a href="#" class="cs-nav-item">
+        <img src="images/cs-nav-bium.png" alt="비움">
+        <span>비움</span>
+      </a>
+      <a href="#" class="cs-nav-item cs-nav-item--active">
+        <img src="images/cs-nav-chaeum.png" alt="채움">
+        <span>채움</span>
+      </a>
+      <a href="mypage.html" class="cs-nav-item">
+        <img src="images/cs-nav-my.png" alt="마이">
+        <span>마이</span>
+      </a>
+    </nav>
+
+  </div>
+</body>
+</html>

@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Pretendard:wght@400;600&display=swap');
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { background: #111; }
+
+body {
+  font-family: 'Pretendard', sans-serif;
+  background: #fff;
+  max-width: 430px;
+  margin: 0 auto;
+  min-height: 100vh;
+}
+
+.screen {
+  width: 100%;
+  min-height: 100vh;
+  background: #fff;
+  padding-bottom: 40px;
+}
+
+/* ─── 헤더 ─── */
+.settings-header {
+  display: flex;
+  align-items: center;
+  height: 58px;
+  padding: 10px 22px;
+  position: relative;
+}
+
+.back-btn {
+  font-family: 'Inter', sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  color: #000;
+  text-decoration: none;
+  line-height: 28px;
+  width: 37px;
+}
+
+.header-title {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: 'Inter', 'Noto Sans KR', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: #000;
+  line-height: 28px;
+  white-space: nowrap;
+}
+
+/* ─── 섹션 공통 ─── */
+main {
+  padding: 0 22px;
+}
+
+.settings-section {
+  margin-top: 28px;
+}
+
+.section-title {
+  font-family: 'Pretendard', sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  color: #000;
+  line-height: normal;
+  margin-bottom: 16px;
+}
+
+/* ─── 알림 토글 행 ─── */
+.toggle-row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 4px 0;
+}
+
+.toggle-info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.toggle-label {
+  font-size: 15px;
+  font-weight: 400;
+  color: #000;
+  line-height: normal;
+}
+
+.toggle-desc {
+  font-size: 12px;
+  font-weight: 400;
+  color: #000;
+  line-height: 16px;
+}
+
+/* ─── CSS 토글 스위치 ─── */
+.toggle-switch {
+  position: relative;
+  flex-shrink: 0;
+  width: 54px;
+  height: 33px;
+  margin-top: 2px;
+}
+
+.toggle-switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.toggle-thumb {
+  position: absolute;
+  inset: 0;
+  background: #d5d5d5;
+  border-radius: 33px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.toggle-thumb::after {
+  content: '';
+  position: absolute;
+  width: 27px;
+  height: 27px;
+  background: #fff;
+  border-radius: 50%;
+  top: 3px;
+  left: 3px;
+  transition: 0.2s;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.2);
+}
+
+.toggle-switch input:checked + .toggle-thumb {
+  background: #ff8732;
+}
+
+.toggle-switch input:checked + .toggle-thumb::after {
+  transform: translateX(21px);
+}
+
+/* ─── 메뉴 리스트 ─── */
+.menu-list {
+  list-style: none;
+  background: #fafafa;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.menu-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px;
+  height: 52px;
+}
+
+.menu-item + .menu-item {
+  border-top: 1px solid #f0f0f0;
+}
+
+.menu-left {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.menu-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 22px;
+  height: 22px;
+  flex-shrink: 0;
+}
+
+.menu-icon svg {
+  width: 100%;
+  height: 100%;
+}
+
+.menu-label {
+  font-size: 17px;
+  font-weight: 400;
+  color: #000;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.chevron {
+  font-size: 12px;
+  color: #aaa;
+  line-height: 1;
+}

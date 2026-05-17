@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <title>포인트 하우스 — 집리셋</title>
+  <link rel="stylesheet" href="css/point-house.css">
+</head>
+<body>
+  <div class="screen">
+
+    <!-- 헤더 -->
+    <header class="ph-header">
+      <a class="back-btn" href="javascript:history.back()">&lt;</a>
+      <h1 class="ph-header-title">포인트 하우스</h1>
+      <div class="ph-header-spacer"></div>
+    </header>
+
+    <!-- 타이틀 -->
+    <div class="ph-title">
+      <h2 class="ph-title-main">집리셋 케어<br>포인트</h2>
+      <p class="ph-title-sub">포인트와 혜택을 한눈에 관리해요</p>
+    </div>
+
+    <!-- 포인트 카드 비주얼 -->
+    <div class="ph-card-visual">
+      <div class="ph-card-grid">
+        <!-- Row 1 -->
+        <div class="ph-point-card card-purple">
+          <div class="card-top">
+            <p class="card-label">Point Card</p>
+            <p class="card-brand">ZIP RESET</p>
+          </div>
+          <p class="card-value">42,850<span class="card-p">P</span></p>
+        </div>
+        <div class="ph-point-card card-red">
+          <div class="card-top">
+            <p class="card-label">Point Card</p>
+            <p class="card-brand">ZIP RESET</p>
+          </div>
+          <p class="card-value">+5,200 P</p>
+        </div>
+        <div class="ph-point-card card-blue">
+          <div class="card-top">
+            <p class="card-label">Point Card</p>
+            <p class="card-brand">ZIP RESET</p>
+          </div>
+          <p class="card-value">최대<br>5% 할인</p>
+        </div>
+        <!-- Row 2 -->
+        <div class="ph-point-card card-magenta">
+          <div class="card-top">
+            <p class="card-label">Point Card</p>
+            <p class="card-brand">ZIP RESET</p>
+          </div>
+          <p class="card-value">최대<br>20,000원<br>절약</p>
+        </div>
+        <div class="ph-point-card card-pink">
+          <div class="card-top">
+            <p class="card-label">Point Card</p>
+            <p class="card-brand">ZIP RESET</p>
+          </div>
+          <p class="card-value">25,850<span class="card-p">P</span></p>
+        </div>
+        <div class="ph-point-card card-black">
+          <div class="card-top">
+            <p class="card-label">Point Card</p>
+            <p class="card-brand">ZIP RESET</p>
+          </div>
+          <p class="card-value"><span class="card-small">멤버십 </span>Green<br>Master</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sub-visual1: 나의 보유 포인트 -->
+    <div class="ph-balance-outer">
+      <div class="ph-balance-card">
+        <div class="ph-balance-info">
+          <p class="ph-balance-label">나의 보유 포인트</p>
+          <p class="ph-balance-value">42,850 <span class="ph-balance-p">P</span></p>
+        </div>
+        <div class="ph-balance-btns">
+          <button class="ph-btn-gift">
+            <svg viewBox="0 0 14 14" fill="none">
+              <path d="M7 3.5C7 2.12 8.12 1 9.5 1S12 2.12 12 3.5H7z" stroke="#fff" stroke-width="1.2" stroke-linecap="round"/>
+              <path d="M7 3.5C7 2.12 5.88 1 4.5 1S2 2.12 2 3.5H7z" stroke="#fff" stroke-width="1.2" stroke-linecap="round"/>
+              <rect x="1" y="3.5" width="12" height="2.5" rx="1" stroke="#fff" stroke-width="1.2"/>
+              <rect x="2" y="6" width="10" height="7" rx="1" stroke="#fff" stroke-width="1.2"/>
+              <line x1="7" y1="6" x2="7" y2="13" stroke="#fff" stroke-width="1.2"/>
+            </svg>
+            포인트 선물하기
+          </button>
+          <button class="ph-btn-charge">
+            <svg viewBox="0 0 14 14" fill="none">
+              <circle cx="7" cy="7" r="5.5" stroke="#000" stroke-width="1.2"/>
+              <path d="M8.5 5L6 7.5h3L5.5 10.5" stroke="#000" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            포인트 충전
+          </button>
+        </div>
+        <div class="ph-expire-row">
+          <svg viewBox="0 0 15 12" fill="none">
+            <circle cx="7.5" cy="6" r="5.5" stroke="rgba(255,255,255,0.7)" stroke-width="1.2"/>
+            <line x1="7.5" y1="4" x2="7.5" y2="6.5" stroke="rgba(255,255,255,0.7)" stroke-width="1.2" stroke-linecap="round"/>
+            <circle cx="7.5" cy="8.5" r="0.7" fill="rgba(255,255,255,0.7)"/>
+          </svg>
+          <p class="ph-expire-text">소멸 예정 포인트: 1,200 p</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sub-visual2: 집리셋 클럽 -->
+    <div class="ph-club-section">
+      <div class="ph-club-header">
+        <span class="ph-club-title">집리셋 클럽</span>
+        <a href="membership.html" class="ph-club-link">
+          <span>혜택 자세히 보기</span>
+          <span class="ph-club-underline"></span>
+        </a>
+      </div>
+      <div class="ph-club-card">
+        <!-- 등급 -->
+        <div class="ph-grade-row">
+          <div class="ph-grade-icon">
+            <svg viewBox="0 0 20 26" fill="none">
+              <path d="M10 2L12.5 9H20L14 13.5L16.5 21.5L10 17L3.5 21.5L6 13.5L0 9H7.5L10 2Z" fill="#fff"/>
+            </svg>
+          </div>
+          <div class="ph-grade-info">
+            <p class="ph-grade-label">현재 등급</p>
+            <p class="ph-grade-name">그린 마스터 (Green Master)</p>
+          </div>
+        </div>
+        <!-- 혜택 목록 -->
+        <div class="ph-benefits-list">
+          <div class="ph-benefit-row">
+            <div class="ph-benefit-left">
+              <div class="ph-benefit-icon">
+                <svg viewBox="0 0 18 22" fill="none">
+                  <rect x="1" y="7" width="16" height="14" rx="2" stroke="#555" stroke-width="1.4"/>
+                  <path d="M5.5 7V5a3.5 3.5 0 017 0v2" stroke="#555" stroke-width="1.4" stroke-linecap="round"/>
+                  <circle cx="9" cy="14" r="2" fill="#555"/>
+                </svg>
+              </div>
+              <span class="ph-benefit-text">정기 케어 서비스 할인</span>
+            </div>
+            <span class="ph-benefit-value">15% OFF</span>
+          </div>
+          <div class="ph-benefit-row">
+            <div class="ph-benefit-left">
+              <div class="ph-benefit-icon">
+                <svg viewBox="0 0 22 16" fill="none">
+                  <rect x="1" y="1" width="20" height="14" rx="2" stroke="#555" stroke-width="1.4"/>
+                  <path d="M1 5h20" stroke="#555" stroke-width="1.4"/>
+                  <path d="M5 10h4" stroke="#555" stroke-width="1.4" stroke-linecap="round"/>
+                </svg>
+              </div>
+              <span class="ph-benefit-text">포인트 샵 무료 배송</span>
+            </div>
+            <div class="ph-benefit-check">
+              <svg viewBox="0 0 17 17" fill="none">
+                <circle cx="8.5" cy="8.5" r="8.5" fill="#5a2e2a"/>
+                <path d="M5 8.5l2.5 2.5 4.5-4.5" stroke="#fff" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+          </div>
+        </div>
+        <!-- 진행바 -->
+        <div class="ph-progress-section">
+          <div class="ph-progress-meta">
+            <span class="ph-progress-label">다음 등급 달성까지</span>
+            <span class="ph-progress-value">7,150 <span class="ph-progress-p">P</span>(65%)</span>
+          </div>
+          <div class="ph-progress-track">
+            <div class="ph-progress-fill" style="width:65%"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sub-visual3: 포인트 샵 -->
+    <div class="ph-shop-section">
+      <h2 class="ph-shop-title">포인트 샵</h2>
+      <!-- 카테고리 탭 -->
+      <div class="ph-tabs">
+        <button class="ph-tab active">전체</button>
+        <button class="ph-tab">모바일 상품권</button>
+        <button class="ph-tab">홈 케어권</button>
+        <button class="ph-tab">인테리어</button>
+      </div>
+      <!-- 상품 그리드 -->
+      <div class="ph-product-grid">
+        <!-- 상품 1 -->
+        <div class="ph-product-card">
+          <div class="ph-product-img">
+            <img src="https://www.figma.com/api/mcp/asset/4ffebed8-636d-475f-9540-605d62d3cd24" alt="세라믹 오브제 화병">
+            <span class="ph-hot-badge">HOT</span>
+          </div>
+          <div class="ph-product-info">
+            <p class="ph-product-cat">인테리어 소품</p>
+            <p class="ph-product-name">세라믹 오브제 화병</p>
+            <p class="ph-product-price">24,000 <span class="ph-price-p">P</span></p>
+          </div>
+        </div>
+        <!-- 상품 2 -->
+        <div class="ph-product-card">
+          <div class="ph-product-img">
+            <img src="https://www.figma.com/api/mcp/asset/e6f1eef7-3b23-4438-abef-b792a4e8d790" alt="심층 매트리스 케어">
+          </div>
+          <div class="ph-product-info">
+            <p class="ph-product-cat">홈 케어 서비스</p>
+            <p class="ph-product-name">심층 매트리스 케어 …</p>
+            <p class="ph-product-price">45,000 <span class="ph-price-p">P</span></p>
+          </div>
+        </div>
+        <!-- 상품 3 (와이드) -->
+        <div class="ph-product-card ph-product-wide">
+          <div class="ph-product-img-wide">
+            <img src="https://www.figma.com/api/mcp/asset/bfc7c9ed-cbb2-4997-bb61-da05a7073326" alt="프리미엄 기프트 바우처">
+          </div>
+          <div class="ph-product-info-wide">
+            <p class="ph-product-cat">모바일 상품권</p>
+            <p class="ph-product-name-lg">프리미엄 기프트 바우처</p>
+            <p class="ph-product-desc">어디서든 자유롭게 사용 가능한<br>5만원 상품권</p>
+            <p class="ph-product-price-lg">50,000 <span class="ph-price-p">P</span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>

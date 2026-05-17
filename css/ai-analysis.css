@@ -1,0 +1,408 @@
+@import url('https://fonts.googleapis.com/css2?family=Pretendard:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500&display=swap');
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { background: #111; }
+
+body {
+  font-family: 'Pretendard', sans-serif;
+  background: #fff;
+  max-width: 430px;
+  margin: 0 auto;
+  min-height: 100vh;
+}
+
+.screen {
+  width: 100%;
+  min-height: 100vh;
+  background: #fff;
+  overflow-x: hidden;
+}
+
+/* ─── 헤더 ─── */
+.ai-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 50px;
+  padding: 0 20px 0 26px;
+}
+
+.back-btn {
+  font-family: 'Inter', sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  color: #000;
+  text-decoration: none;
+  line-height: 1;
+  width: 24px;
+}
+
+.header-logo {
+  width: 87px;
+  height: 28px;
+}
+
+.header-icons {
+  display: flex;
+  align-items: center;
+  gap: 19px;
+}
+
+.header-icons svg {
+  width: 24px;
+  height: 24px;
+  stroke: #000;
+  fill: none;
+  stroke-width: 1.7;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+/* ─── 타이틀 ─── */
+.title-box {
+  padding: 29px 26px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 21px;
+  margin-bottom: 22px;
+  line-height: 0;
+}
+
+.title-main {
+  font-family: 'Pretendard', sans-serif;
+  font-size: 31px;
+  font-weight: 700;
+  color: #000;
+  line-height: 28px;
+  white-space: nowrap;
+}
+
+.title-sub {
+  font-family: 'Pretendard', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #141414;
+  line-height: 28px;
+  white-space: nowrap;
+}
+
+/* ─── 스캐너 비주얼 ─── */
+.visual-wrap {
+  position: relative;
+  width: 100%;
+  height: 432px;
+}
+
+.visual-bg-wrap {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.visual-bg-white {
+  position: absolute;
+  inset: 0;
+  background: #fff;
+}
+
+.visual-bg-img-wrap {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+}
+
+.visual-bg-img {
+  position: absolute;
+  top: 0;
+  left: -24.36%;
+  width: 127.52%;
+  height: 117.59%;
+  max-width: none;
+  display: block;
+  object-fit: fill;
+}
+
+.visual-overlay {
+  position: absolute;
+  top: 0;
+  left: 1px;
+  width: 430px;
+  height: 432px;
+  background: rgba(0, 0, 0, 0.13);
+}
+
+.scanner-area {
+  position: absolute;
+  top: 14px;
+  left: 45px;
+  right: 45px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 35px;
+}
+
+/* ─── 스캐너 프레임 ─── */
+.scanner-frame {
+  position: relative;
+  width: 100%;
+  height: 333px;
+  border: 2px solid #5a2e2a;
+  border-radius: 16px;
+  overflow: visible;
+}
+
+/* ─── 오렌지 코너 액센트 ─── */
+.corner {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+}
+
+.corner.tl {
+  top: -4px;
+  left: -4px;
+  border-top: 4px solid #ff8732;
+  border-left: 4px solid #ff8732;
+  border-radius: 4px 0 0 0;
+}
+
+.corner.tr {
+  top: -4px;
+  right: -4px;
+  border-top: 4px solid #ff8732;
+  border-right: 4px solid #ff8732;
+  border-radius: 0 4px 0 0;
+}
+
+.corner.bl {
+  bottom: -4px;
+  left: -4px;
+  border-bottom: 4px solid #ff8732;
+  border-left: 4px solid #ff8732;
+  border-radius: 0 0 0 4px;
+}
+
+.corner.br {
+  bottom: -4px;
+  right: -4px;
+  border-bottom: 4px solid #ff8732;
+  border-right: 4px solid #ff8732;
+  border-radius: 0 0 4px 0;
+}
+
+/* ─── 스캔 라인 ─── */
+.scan-line {
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 2px;
+  border: 1px solid rgba(90, 46, 42, 0.61);
+  filter: blur(2px);
+  top: calc(50% + 1.5px);
+  transform: translateY(-50%);
+}
+
+/* ─── 배지 ─── */
+.badge {
+  position: absolute;
+  width: 110px;
+  height: 26px;
+  border-radius: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+}
+
+.badge-frame {
+  background: rgba(55, 20, 20, 0.82);
+  left: -7px;
+  top: 41px;
+}
+
+.badge-wear {
+  background: #5a2e2a;
+  border: 1px solid #fff;
+  right: -4px;
+  top: 193px;
+}
+
+.badge-top {
+  font-family: 'Pretendard', sans-serif;
+  font-size: 7px;
+  font-weight: 700;
+  color: #fff;
+  line-height: 13.5px;
+}
+
+.badge-bottom {
+  font-family: 'Pretendard', sans-serif;
+  font-size: 7px;
+  font-weight: 600;
+  color: #fff;
+  line-height: 13.5px;
+}
+
+/* ─── 카메라 버튼 ─── */
+.camera-btn {
+  position: absolute;
+  bottom: -28px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 65px;
+  height: 54px;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 3px solid rgba(255, 255, 255, 0.9);
+  border-radius: 12px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3px;
+}
+
+.camera-inner {
+  width: 37px;
+  height: 32px;
+  background: rgba(255, 255, 255, 0.77);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.camera-inner svg {
+  width: 17px;
+  height: 16px;
+}
+
+/* ─── 안내 텍스트 ─── */
+.guide-text {
+  font-family: 'Pretendard', sans-serif;
+  font-size: 9px;
+  font-weight: 500;
+  color: #fff;
+  text-align: center;
+  line-height: 13.5px;
+}
+
+/* ─── 정보 카드 ─── */
+.info-cards {
+  display: flex;
+  gap: 29px;
+  padding: 48px 22px 0 34px;
+}
+
+.info-card {
+  flex: 1;
+  min-width: 0;
+  background: #fff;
+  border: 1px solid #a6a6a6;
+  border-radius: 20px;
+  padding: 38px 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+  overflow: hidden;
+}
+
+.info-label {
+  font-family: 'Pretendard', sans-serif;
+  font-size: 11px;
+  font-weight: 400;
+  color: #666;
+  line-height: 13.5px;
+}
+
+.info-value {
+  font-family: 'Pretendard', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: #000;
+  line-height: 13.5px;
+}
+
+.info-value-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.dots {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.dot {
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.dot.active {
+  background: #000;
+}
+
+.info-sub-row {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.info-sub {
+  font-family: 'Pretendard', sans-serif;
+  font-size: 9px;
+  font-weight: 600;
+  color: #000;
+  line-height: 13.5px;
+  white-space: nowrap;
+}
+
+.info-icon {
+  width: 9px;
+  height: 7px;
+  flex-shrink: 0;
+}
+
+/* ─── 버튼 영역 ─── */
+.btn-area {
+  padding: 17px 23px 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.btn-primary {
+  width: 100%;
+  background: #ff8732;
+  color: #fff;
+  font-family: 'Plus Jakarta Sans', 'Noto Sans KR', sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  border: none;
+  border-radius: 12px;
+  padding: 16px;
+  cursor: pointer;
+  text-align: center;
+  line-height: 24px;
+}
+
+.btn-primary:active {
+  background: #e87520;
+}
+
+.btn-note {
+  font-family: 'Pretendard', sans-serif;
+  font-size: 9px;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.6);
+  text-align: center;
+  line-height: 13.5px;
+}

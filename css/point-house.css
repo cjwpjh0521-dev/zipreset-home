@@ -1,0 +1,665 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&family=Plus+Jakarta+Sans:wght@700&family=Noto+Sans+KR:wght@400;500;600;700&display=swap');
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { background: #111; }
+
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+  background: #fff;
+  max-width: 430px;
+  margin: 0 auto;
+  min-height: 100vh;
+}
+
+.screen {
+  width: 100%;
+  background: #fff;
+  overflow-x: hidden;
+  padding-bottom: 48px;
+}
+
+/* ─── 헤더 ─── */
+.ph-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 53px;
+  padding: 0 10px;
+}
+
+.back-btn {
+  font-family: 'Inter', sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  color: #000;
+  text-decoration: none;
+  width: 35px;
+  line-height: 1;
+}
+
+.ph-header-title {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: #000;
+  letter-spacing: -0.45px;
+  line-height: 28px;
+}
+
+.ph-header-spacer {
+  width: 35px;
+}
+
+/* ─── 타이틀 ─── */
+.ph-title {
+  padding: 43px 18px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  margin-bottom: 30px;
+}
+
+.ph-title-main {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  color: #000;
+  line-height: 37px;
+  letter-spacing: -1px;
+}
+
+.ph-title-sub {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #000;
+  line-height: 37px;
+  letter-spacing: -1px;
+}
+
+/* ─── 포인트 카드 비주얼 ─── */
+.ph-card-visual {
+  background: #d2bbd2;
+  width: 100%;
+  height: 374px;
+  overflow: hidden;
+  padding-top: 21px;
+}
+
+.ph-card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 120px);
+  grid-template-rows: 195px 195px;
+  gap: 9px 8px;
+  justify-content: center;
+}
+
+.ph-point-card {
+  width: 120px;
+  height: 195px;
+  border-radius: 12px;
+  padding: 13px 9px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+/* 카드 배경 */
+.card-purple  { background: linear-gradient(to right, #832388, #932883 51%, #a32e7e); }
+.card-red     { background: linear-gradient(57.85deg, #ff5858 0%, #ff6b6b 49.27%, #ff7d7d 100%); }
+.card-blue    { background: linear-gradient(57.85deg, #0968e5 0%, #0941ab 49.27%, #091970 100%); }
+.card-magenta { background: linear-gradient(57.85deg, #780c67 0%, #940967 42%, #b10667 73.75%, #d90266 100%); }
+.card-pink    { background: linear-gradient(90deg, #bc1b68 0%, #c03071 34.69%, #c44579 65.94%, #c85a82 100%); }
+.card-black   { background: #000; }
+
+.card-top {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.card-label {
+  font-family: Arial, sans-serif;
+  font-size: 5px;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: -0.05px;
+  line-height: normal;
+}
+
+.card-brand {
+  font-family: Arial, sans-serif;
+  font-size: 8px;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: -0.09px;
+  line-height: normal;
+}
+
+.card-value {
+  font-family: Arial, sans-serif;
+  font-size: 10px;
+  font-weight: 700;
+  color: #fff;
+  text-align: right;
+  line-height: 15px;
+  letter-spacing: -0.1px;
+}
+
+.card-p {
+  font-size: 7px;
+  letter-spacing: -0.07px;
+}
+
+.card-small {
+  font-size: 7px;
+  letter-spacing: 0;
+}
+
+/* ─── 나의 보유 포인트 ─── */
+.ph-balance-outer {
+  background: #fff;
+  padding: 33px 18px 40px;
+}
+
+.ph-balance-card {
+  background: #662626;
+  border-radius: 30px;
+  padding: 34px 33px 29px 41px;
+  display: flex;
+  flex-direction: column;
+  gap: 27px;
+}
+
+.ph-balance-label {
+  font-family: 'Manrope', 'Noto Sans KR', sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  color: #fff;
+  letter-spacing: -1px;
+  line-height: 20px;
+  margin-bottom: 7px;
+}
+
+.ph-balance-value {
+  font-family: 'Manrope', sans-serif;
+  font-size: 30px;
+  font-weight: 600;
+  color: #fff;
+  letter-spacing: -1px;
+  line-height: 40px;
+}
+
+.ph-balance-p {
+  font-size: 20px;
+}
+
+.ph-balance-btns {
+  display: flex;
+  gap: 11px;
+}
+
+.ph-btn-gift,
+.ph-btn-charge {
+  flex: 1;
+  height: 44px;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  letter-spacing: -0.5px;
+}
+
+.ph-btn-gift svg,
+.ph-btn-charge svg {
+  width: 14px;
+  height: 14px;
+  flex-shrink: 0;
+}
+
+.ph-btn-gift {
+  background: #ff8732;
+  color: #fff;
+}
+
+.ph-btn-charge {
+  background: #fff;
+  color: #000;
+  box-shadow: 0px 1px 1px rgba(0,0,0,0.05);
+}
+
+.ph-expire-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.ph-expire-row svg {
+  width: 15px;
+  height: 15px;
+  flex-shrink: 0;
+}
+
+.ph-expire-text {
+  font-family: 'Manrope', 'Noto Sans KR', sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  color: #fff;
+  letter-spacing: -1px;
+  line-height: 20px;
+  white-space: nowrap;
+}
+
+/* ─── 집리셋 클럽 ─── */
+.ph-club-section {
+  padding: 0 18px 40px;
+}
+
+.ph-club-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+.ph-club-title {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 27px;
+  font-weight: 700;
+  color: #000;
+  letter-spacing: -0.27px;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.ph-club-link {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  text-decoration: none;
+}
+
+.ph-club-link span:first-child {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  color: #000;
+  letter-spacing: -0.12px;
+  line-height: normal;
+  display: block;
+}
+
+.ph-club-underline {
+  display: block;
+  height: 1px;
+  background: #000;
+  width: 100%;
+}
+
+.ph-club-card {
+  background: #f9f9f9;
+  border: 1px solid #e5e5e5;
+  border-radius: 10px;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/* 등급 */
+.ph-grade-row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.ph-grade-icon {
+  width: 57px;
+  height: 64px;
+  background: #ff8732;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.ph-grade-icon svg {
+  width: 20px;
+  height: 26px;
+}
+
+.ph-grade-label {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  color: #000;
+  line-height: 16px;
+  margin-bottom: 6px;
+}
+
+.ph-grade-name {
+  font-family: 'Plus Jakarta Sans', 'Noto Sans KR', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: #000;
+  letter-spacing: -1px;
+  line-height: 28px;
+}
+
+/* 혜택 목록 */
+.ph-benefits-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.ph-benefit-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fff;
+  border: 1px solid #e5e5e5;
+  border-radius: 16px;
+  padding: 17px;
+}
+
+.ph-benefit-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.ph-benefit-icon {
+  width: 22px;
+  height: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.ph-benefit-icon svg {
+  width: 100%;
+  height: 100%;
+}
+
+.ph-benefit-text {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: #000;
+  line-height: 20px;
+}
+
+.ph-benefit-value {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  color: #662626;
+  line-height: 20px;
+}
+
+.ph-benefit-check {
+  width: 17px;
+  height: 17px;
+  flex-shrink: 0;
+}
+
+.ph-benefit-check svg {
+  width: 17px;
+  height: 17px;
+  display: block;
+}
+
+/* 진행바 */
+.ph-progress-section {
+  border-top: 1px solid #e5e5e5;
+  padding-top: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.ph-progress-meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.ph-progress-label {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  color: #000;
+  line-height: 16px;
+}
+
+.ph-progress-value {
+  font-family: 'Manrope', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  color: #662626;
+  letter-spacing: -1px;
+  line-height: 20px;
+}
+
+.ph-progress-p {
+  font-size: 12px;
+}
+
+.ph-progress-track {
+  width: 100%;
+  height: 10px;
+  background: #f0edea;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.ph-progress-fill {
+  height: 100%;
+  background: #ff8732;
+  border-radius: 12px;
+}
+
+/* ─── 포인트 샵 ─── */
+.ph-shop-section {
+  padding: 0 18px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+}
+
+.ph-shop-title {
+  font-family: 'Manrope', 'Noto Sans KR', sans-serif;
+  font-size: 27px;
+  font-weight: 700;
+  color: #000;
+  letter-spacing: -0.27px;
+  line-height: normal;
+}
+
+/* 카테고리 탭 */
+.ph-tabs {
+  display: flex;
+  gap: 13px;
+  overflow-x: auto;
+  scrollbar-width: none;
+  height: 40px;
+  flex-shrink: 0;
+}
+
+.ph-tabs::-webkit-scrollbar { display: none; }
+
+.ph-tab {
+  height: 40px;
+  padding: 0 20px;
+  border: none;
+  border-radius: 12px;
+  font-family: 'Manrope', 'Noto Sans KR', sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  color: #000;
+  background: #f5f5f5;
+  cursor: pointer;
+  white-space: nowrap;
+  letter-spacing: -1px;
+  line-height: 20px;
+  flex-shrink: 0;
+}
+
+.ph-tab.active {
+  background: #000;
+  color: #fff;
+  font-weight: 500;
+}
+
+/* 상품 그리드 */
+.ph-product-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.ph-product-card {
+  background: #fff;
+  border: 1px solid #e5e5e5;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0px 1px 2px rgba(0,0,0,0.05);
+}
+
+.ph-product-img {
+  position: relative;
+  background: #f9f9f9;
+  height: 160px;
+  overflow: hidden;
+}
+
+.ph-product-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.ph-hot-badge {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background: #ff8732;
+  color: #fff;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 15px;
+  padding: 4px 8px;
+  border-radius: 12px;
+}
+
+.ph-product-info {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.ph-product-cat {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 10px;
+  font-weight: 500;
+  color: #000;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  line-height: 15px;
+}
+
+.ph-product-name {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: #000;
+  line-height: 20px;
+}
+
+.ph-product-price {
+  font-family: 'Manrope', sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  color: #662626;
+  letter-spacing: -1px;
+  line-height: 24px;
+}
+
+.ph-price-p {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 10px;
+  font-weight: 700;
+  color: #000;
+}
+
+/* 와이드 카드 */
+.ph-product-wide {
+  grid-column: 1 / span 2;
+  display: flex;
+  flex-direction: row;
+  height: 169px;
+}
+
+.ph-product-img-wide {
+  background: #f9f9f9;
+  width: 139px;
+  height: 100%;
+  flex-shrink: 0;
+  overflow: hidden;
+}
+
+.ph-product-img-wide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.ph-product-info-wide {
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  justify-content: center;
+}
+
+.ph-product-name-lg {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: #000;
+  line-height: 24px;
+}
+
+.ph-product-desc {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  color: #000;
+  line-height: 16px;
+  padding-bottom: 16px;
+}
+
+.ph-product-price-lg {
+  font-family: 'Manrope', sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  color: #662626;
+  letter-spacing: -1px;
+  line-height: 28px;
+}

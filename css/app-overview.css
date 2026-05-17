@@ -1,0 +1,631 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Manrope:wght@800&family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@700&family=Pretendard:wght@400;500;600;700&display=swap');
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { background: #111; }
+
+body {
+  font-family: 'Pretendard', sans-serif;
+  background: #fff;
+  max-width: 430px;
+  margin: 0 auto;
+  min-height: 100vh;
+}
+
+.screen {
+  width: 100%;
+  background: #fff;
+  overflow-x: hidden;
+}
+
+/* ─── 헤더 ─── */
+.app-header {
+  height: 54px;
+  display: flex;
+  align-items: center;
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 384px;
+  margin: 0 auto;
+}
+
+.back-btn {
+  font-family: 'Inter', sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  color: #000;
+  text-decoration: none;
+  line-height: 1;
+  width: 24px;
+}
+
+.header-logo { width: 74px; height: 28px; }
+
+.header-icons {
+  display: flex;
+  align-items: center;
+  gap: 19px;
+}
+
+.header-icons svg {
+  width: 24px;
+  height: 24px;
+  stroke: #000;
+  fill: none;
+  stroke-width: 1.7;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+/* ─── Visual 1: 히어로 ─── */
+.hero-visual {
+  position: relative;
+  width: 100%;
+  height: 646px;
+  overflow: hidden;
+  margin-top: 26px;
+}
+
+.hero-bg-wrap {
+  position: absolute;
+  top: 0;
+  left: -8px;
+  width: 446px;
+  height: 100%;
+  overflow: hidden;
+}
+
+.hero-bg-img {
+  position: absolute;
+  top: 0;
+  left: -17.35%;
+  width: 217.03%;
+  height: 100%;
+  max-width: none;
+  display: block;
+  object-fit: fill;
+}
+
+.hero-gradient {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, rgba(171,171,171,0.22) 0%, rgba(35,34,34,0.22) 70.787%);
+}
+
+.hero-brand {
+  position: absolute;
+  left: 29px;
+  top: 512px;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 51px;
+  color: #fff;
+  letter-spacing: -1px;
+  line-height: 43.2px;
+}
+
+.hero-subtitle {
+  position: absolute;
+  left: 29px;
+  top: 560px;
+  width: 224px;
+  font-family: 'Inter', 'Noto Sans KR', sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  color: #fff;
+  letter-spacing: -1px;
+  line-height: 16.2px;
+}
+
+.hero-tagline {
+  margin-bottom: 0;
+  white-space: nowrap;
+}
+
+.hero-desc {
+  white-space: pre;
+  margin-top: 0;
+}
+
+/* ─── Visual 2: 다크 공간 관리 ─── */
+.dark-visual {
+  position: relative;
+  width: 100%;
+  height: 327px;
+  overflow: hidden;
+  margin-top: 10px;
+}
+
+.dark-bg-wrap {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+}
+
+.dark-bg-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  object-fit: cover;
+  display: block;
+}
+
+.dark-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.56);
+  display: flex;
+  align-items: flex-start;
+}
+
+.dark-content {
+  padding: 89px 30px 0;
+  width: 100%;
+}
+
+.dark-title {
+  font-family: 'Inter', 'Noto Sans KR', sans-serif;
+  font-size: 26px;
+  font-weight: 500;
+  color: #fff;
+  letter-spacing: -1px;
+  line-height: 33px;
+  margin-bottom: 43px;
+}
+
+.dark-desc {
+  font-family: 'Pretendard', sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  color: #fff;
+  letter-spacing: -1px;
+  line-height: 28px;
+  width: 263px;
+}
+
+/* ─── 왜 집리셋 타이틀 ─── */
+.why-title-wrap {
+  padding: 56px 20px 0;
+}
+
+.why-title {
+  font-family: 'Pretendard', sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+  color: #000;
+  letter-spacing: -1px;
+  line-height: 20px;
+}
+
+/* ─── AI 진단 리포트 ─── */
+.ai-report {
+  margin-top: 45px;
+  background: #f5f5f5;
+  width: 100%;
+  min-height: 459px;
+  padding: 14px 23px 38px;
+  overflow: hidden;
+}
+
+.report-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.report-sub {
+  font-family: 'Inter', 'Noto Sans KR', sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  color: #000;
+  letter-spacing: -1px;
+  line-height: 19px;
+}
+
+.report-main-title {
+  font-family: 'Inter', 'Noto Sans KR', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: #000;
+  letter-spacing: -1px;
+  line-height: 19px;
+  margin-top: 14px;
+}
+
+.report-icon {
+  width: 27px;
+  height: 27px;
+  flex-shrink: 0;
+}
+
+/* ─── 도넛 차트 ─── */
+.donut-wrap {
+  display: flex;
+  justify-content: center;
+  margin: 16px 0 28px;
+}
+
+.donut-svg {
+  width: 160px;
+  height: 160px;
+}
+
+/* ─── 진행 바 ─── */
+.progress-bars {
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+  padding: 0 4px;
+}
+
+.progress-item {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.progress-meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.progress-label {
+  font-family: 'Inter', 'Noto Sans KR', sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  color: #000;
+  letter-spacing: -1px;
+  line-height: 20px;
+}
+
+.progress-value {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  color: #5a2e2a;
+  letter-spacing: -1px;
+  line-height: 20px;
+}
+
+.progress-track {
+  width: 100%;
+  height: 4px;
+  background: #f4f4f5;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background: #ff6a00;
+  border-radius: 12px;
+}
+
+/* ─── Special Features ─── */
+.features-section {
+  background: #eff4ff;
+  padding: 96px 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  margin-top: 42px;
+}
+
+.features-img-wrap {
+  position: relative;
+  width: 100%;
+  height: 326px;
+  border-radius: 48px;
+  overflow: hidden;
+}
+
+.features-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.features-img-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 99, 153, 0.1);
+  mix-blend-mode: multiply;
+}
+
+.features-preview-card {
+  position: absolute;
+  bottom: 32px;
+  left: 32px;
+  max-width: 320px;
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 16px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.preview-badge {
+  font-family: 'Pretendard', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: #5a2e2a;
+  text-transform: uppercase;
+  line-height: 20px;
+}
+
+.preview-text {
+  font-family: 'Pretendard', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: #000;
+  line-height: 24px;
+  white-space: nowrap;
+}
+
+.features-list {
+  display: flex;
+  flex-direction: column;
+  gap: 42px;
+}
+
+.feature-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+.feature-icon-wrap {
+  flex-shrink: 0;
+  width: 64px;
+  height: 64px;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0px 1px 1px rgba(0,0,0,0.05);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.feature-icon-wrap svg {
+  width: 27px;
+  height: 27px;
+}
+
+.feature-text {
+  flex: 1;
+  padding-top: 4px;
+}
+
+.feature-title {
+  font-family: 'Pretendard', sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  color: #000;
+  letter-spacing: -1px;
+  line-height: 36px;
+  margin-bottom: 16px;
+}
+
+.feature-desc {
+  font-family: 'Pretendard', sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  color: #000;
+  letter-spacing: -1px;
+  line-height: 29.25px;
+}
+
+/* ─── 관리 방법 타이틀 ─── */
+.mgmt-title-wrap {
+  padding: 71px 32px 0;
+}
+
+.mgmt-title {
+  font-family: 'Pretendard', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: #000;
+  letter-spacing: -1px;
+  line-height: 31px;
+}
+
+/* ─── 01/02/03 관리 방법 ─── */
+.mgmt-section {
+  background: #efefef;
+  padding: 48px 28px;
+  margin-top: 61px;
+  display: flex;
+  flex-direction: column;
+  gap: 117px;
+}
+
+.mgmt-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 17px;
+  background: #fff;
+  border-radius: 5px;
+  padding: 0 14px;
+  height: 31px;
+  overflow: hidden;
+  margin-bottom: 22px;
+}
+
+.mgmt-num {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: #ff8732;
+  line-height: 31px;
+  width: 27px;
+}
+
+.mgmt-label {
+  font-family: 'Pretendard', sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  color: #000;
+  letter-spacing: -1px;
+  line-height: 31px;
+}
+
+.mgmt-desc {
+  font-family: 'Pretendard', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #000;
+  line-height: 22px;
+  width: 294px;
+}
+
+/* ─── 후기 ─── */
+.testimonials {
+  padding: 44px 29px 0;
+}
+
+.testimonials-title {
+  font-family: 'Pretendard', sans-serif;
+  font-size: 26px;
+  font-weight: 500;
+  color: #000;
+  letter-spacing: -1px;
+  line-height: 31px;
+  margin-bottom: 24px;
+}
+
+.testimonials-scroll {
+  display: flex;
+  gap: 7px;
+  overflow-x: auto;
+  padding-bottom: 8px;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+}
+
+.testimonials-scroll::-webkit-scrollbar { display: none; }
+
+.testimonial-card {
+  flex-shrink: 0;
+  width: 356px;
+  height: 185px;
+  background: #f1f1f1;
+  border-radius: 10px;
+  padding: 13px 13px 22px 17px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.testimonial-profile {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.profile-avatar {
+  width: 37px;
+  height: 37px;
+  border-radius: 12px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.profile-avatar svg {
+  width: 37px;
+  height: 37px;
+  display: block;
+}
+
+.profile-name {
+  font-family: 'Inter', 'Noto Sans KR', sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  color: #000;
+  line-height: 22.75px;
+}
+
+.profile-role {
+  font-family: 'Inter', 'Noto Sans KR', sans-serif;
+  font-size: 10px;
+  font-weight: 400;
+  color: #868686;
+  line-height: 22.75px;
+}
+
+.testimonial-text {
+  font-family: 'Inter', 'Noto Sans KR', sans-serif;
+  font-size: 10px;
+  font-weight: 400;
+  color: #000;
+  letter-spacing: -1px;
+  line-height: 20.8px;
+}
+
+.testimonial-text strong {
+  font-weight: 500;
+}
+
+/* ─── CTA ─── */
+.cta-section {
+  background: #000;
+  padding: 35px 29px 52px;
+  margin-top: 43px;
+}
+
+.cta-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 28px;
+  width: 100%;
+}
+
+.cta-title {
+  font-family: 'Pretendard', sans-serif;
+  font-size: 30px;
+  font-weight: 600;
+  color: #fff;
+  letter-spacing: -1px;
+  line-height: 22.75px;
+  text-align: center;
+}
+
+.cta-desc {
+  font-family: 'Pretendard', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #fff;
+  letter-spacing: -1px;
+  line-height: 22.8px;
+  text-align: center;
+}
+
+.cta-btn {
+  width: 100%;
+  background: #ff8732;
+  color: #fff;
+  font-family: 'Inter', 'Noto Sans KR', sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  border: none;
+  border-radius: 60px;
+  height: 44px;
+  cursor: pointer;
+  letter-spacing: -1px;
+  line-height: 22.8px;
+}
+
+.cta-btn:active { background: #e87520; }

@@ -1,0 +1,463 @@
+@import url('https://fonts.googleapis.com/css2?family=Pretendard:wght@400;500;600;700&family=Manrope:wght@800&display=swap');
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: 'Pretendard', 'Noto Sans KR', sans-serif;
+  background: #f0f0f0;
+  display: flex;
+  justify-content: center;
+}
+
+.page-wrap {
+  width: 430px;
+  min-height: 100vh;
+  background: #fff;
+  overflow-x: hidden;
+  padding-bottom: 100px;
+}
+
+/* ─── 헤더 ─── */
+.cs-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 53px;
+  padding: 0 10px;
+}
+
+.cs-header-back {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 37px;
+  height: 48px;
+  font-size: 24px;
+  font-weight: 600;
+  color: #000;
+  text-decoration: none;
+}
+
+.cs-header-title {
+  font-size: 16px;
+  font-weight: 400;
+  color: #000;
+  letter-spacing: -0.45px;
+  line-height: 28px;
+}
+
+.cs-header-spacer {
+  width: 37px;
+}
+
+/* ─── 히어로 비주얼 ─── */
+.cs-hero {
+  position: relative;
+  width: 430px;
+  height: 439px;
+  overflow: hidden;
+  margin-top: 28px;
+}
+
+.cs-hero-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.cs-hero-gradient {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.2) 40%, rgba(102,102,102,0.2) 100%);
+}
+
+.cs-hero-text {
+  position: absolute;
+  top: 30px;
+  left: 19px;
+  color: #fff;
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 30px;
+  letter-spacing: -1px;
+}
+
+/* ─── 공간 상태 카드 ─── */
+.cs-status-card {
+  position: relative;
+  width: 394px;
+  height: 193px;
+  background: #ff8732;
+  margin: 44px 18px 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.cs-status-label {
+  position: absolute;
+  top: 15px;
+  left: 27px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #fff;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+  line-height: 20px;
+}
+
+.cs-status-score {
+  position: absolute;
+  top: 43px;
+  left: 27px;
+  display: flex;
+  align-items: flex-start;
+  line-height: 1;
+}
+
+.cs-status-score em {
+  font-family: 'Manrope', sans-serif;
+  font-style: normal;
+  font-size: 48px;
+  font-weight: 800;
+  color: #fff;
+  line-height: 60px;
+}
+
+.cs-status-score span {
+  font-family: 'Manrope', sans-serif;
+  font-size: 24px;
+  font-weight: 800;
+  color: #fff;
+  line-height: 32px;
+  margin-top: 10px;
+}
+
+.cs-status-sub {
+  position: absolute;
+  top: 107px;
+  left: 27px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #fff;
+  line-height: 24px;
+}
+
+.cs-status-tags {
+  position: absolute;
+  top: 144px;
+  left: 27px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.cs-tag {
+  height: 24px;
+  border-radius: 12px;
+  padding: 0 12px;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 24px;
+  white-space: nowrap;
+}
+
+.cs-tag--dark {
+  background: #5a2e2a;
+  color: #fff;
+}
+
+.cs-tag--light {
+  background: #e5e5e5;
+  color: #000;
+}
+
+/* ─── 내 케어 현황 ─── */
+.cs-care-section {
+  padding: 0 18px;
+  margin-top: 31px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.cs-care-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cs-care-title {
+  font-size: 18px;
+  font-weight: 500;
+  color: #060505;
+  line-height: 28px;
+}
+
+.cs-care-more {
+  font-size: 14px;
+  font-weight: 500;
+  color: #060505;
+  text-decoration: none;
+  line-height: 28px;
+}
+
+.cs-schedule-card {
+  width: 100%;
+  height: 101px;
+  border: 1px solid #d2d2d2;
+  border-radius: 10px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 28px 17px 25px;
+}
+
+.cs-schedule-left {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.cs-schedule-icon-wrap {
+  width: 48px;
+  height: 48px;
+  border: 1px solid #eceaea;
+  border-radius: 12px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.cs-schedule-icon {
+  width: 16px;
+  height: 20px;
+  object-fit: contain;
+}
+
+.cs-schedule-info {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.cs-schedule-label {
+  font-size: 11px;
+  font-weight: 500;
+  color: #000;
+  line-height: 20px;
+}
+
+.cs-schedule-date {
+  font-size: 14px;
+  font-weight: 700;
+  color: #000;
+  line-height: 20px;
+}
+
+.cs-schedule-name {
+  font-size: 14px;
+  font-weight: 500;
+  color: #000;
+  line-height: 20px;
+}
+
+.cs-schedule-arrow {
+  width: 8px;
+  height: 12px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+/* ─── 서비스 카드 목록 ─── */
+.cs-service-list {
+  padding: 0 18px;
+  margin-top: 31px;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.cs-service-card {
+  width: 100%;
+  background: #f5f5f5;
+  border-radius: 20px;
+  padding: 28px 28px 24px 27px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.cs-service-top {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.cs-service-icon-wrap {
+  width: 38px;
+  height: 39px;
+  background: #fff;
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cs-service-icon {
+  width: 25px;
+  height: 18px;
+  object-fit: contain;
+}
+
+.cs-reserve-btn {
+  width: 88px;
+  height: 36px;
+  background: #ff8732;
+  border: none;
+  border-radius: 11px;
+  font-family: 'Pretendard', 'Noto Sans KR', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: #fff;
+  cursor: pointer;
+}
+
+.cs-service-name {
+  font-size: 23px;
+  font-weight: 500;
+  color: #000;
+  line-height: 1.2;
+}
+
+.cs-service-desc {
+  font-size: 13px;
+  font-weight: 400;
+  color: #000;
+  line-height: 20px;
+}
+
+.cs-progress-track {
+  width: 100%;
+  height: 4px;
+  background: #e0e0e0;
+  border-radius: 12px;
+  overflow: hidden;
+  margin-top: 4px;
+}
+
+.cs-progress-fill {
+  width: 66.66%;
+  height: 100%;
+  background: #ff8732;
+  border-radius: 12px;
+}
+
+/* ─── 프로모션 카드 ─── */
+.cs-promo-card {
+  margin: 20px 18px 0;
+  background: #f5f5f5;
+  border-radius: 32px;
+  padding: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 26px;
+}
+
+.cs-promo-text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  min-width: 0;
+}
+
+.cs-promo-label {
+  font-size: 12px;
+  font-weight: 700;
+  color: #905e5e;
+  letter-spacing: -0.6px;
+  text-transform: uppercase;
+  line-height: 16px;
+}
+
+.cs-promo-title {
+  font-size: 19px;
+  font-weight: 600;
+  color: #662626;
+  letter-spacing: -0.6px;
+  line-height: 24px;
+}
+
+.cs-promo-sub {
+  font-size: 15px;
+  font-weight: 600;
+  color: #905e5e;
+  line-height: 20px;
+  padding-top: 4px;
+}
+
+.cs-promo-icon-wrap {
+  width: 64px;
+  height: 64px;
+  border-radius: 12px;
+  background: rgba(56,56,56,0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.cs-promo-icon {
+  width: 22px;
+  height: 22px;
+  object-fit: contain;
+}
+
+/* ─── 하단 네비게이션 ─── */
+.cs-bottom-nav {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 430px;
+  height: 83px;
+  background: #5a2e2a;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+  padding: 0 53px 12px;
+}
+
+.cs-nav-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 16.5px;
+  padding-bottom: 2px;
+}
+
+.cs-nav-item img {
+  width: 22px;
+  height: 22px;
+  object-fit: contain;
+}
+
+.cs-nav-item--active {
+  color: #ff8732;
+}
