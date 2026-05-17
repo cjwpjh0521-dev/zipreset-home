@@ -100,7 +100,7 @@ body {
 .vr-visual-overlay {
   position: absolute;
   inset: 0;
-  background: rgba(21,17,17,0.6);
+  background: rgba(21,17,17,0.3);
 }
 
 /* 스캐닝 프레임 */
