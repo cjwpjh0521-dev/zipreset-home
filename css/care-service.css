@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Pretendard:wght@400;500;600;700&family=Manrope:wght@800&display=swap');
+﻿@import url('https://fonts.googleapis.com/css2?family=Pretendard:wght@400;500;600;700&family=Manrope:wght@800&display=swap');
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -80,13 +80,16 @@ body {
 
 .cs-hero-text {
   position: absolute;
-  top: 30px;
-  left: 19px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   color: #fff;
   font-size: 25px;
-  font-weight: 600;
+  font-weight: 400;
   line-height: 30px;
   letter-spacing: -1px;
+  text-align: center;
+  white-space: nowrap;
 }
 
 /* ─── 공간 상태 카드 ─── */
@@ -425,39 +428,57 @@ body {
 }
 
 /* ─── 하단 네비게이션 ─── */
-.cs-bottom-nav {
+.bottom-nav {
   position: fixed;
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
-  width: 430px;
-  height: 83px;
+  width: 100%;
+  max-width: 430px;
   background: #5a2e2a;
-  display: flex;
-  align-items: flex-end;
-  justify-content: space-around;
-  padding: 0 53px 12px;
+  height: 83px;
+  z-index: 100;
 }
 
-.cs-nav-item {
+.nav-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 83px;
+  padding: 0 8px;
+}
+
+.nav-item {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 8px;
+  gap: 10px;
+  cursor: pointer;
   text-decoration: none;
-  color: #fff;
-  font-size: 11px;
-  font-weight: 400;
-  line-height: 16.5px;
-  padding-bottom: 2px;
+  min-width: 46px;
 }
 
-.cs-nav-item img {
-  width: 22px;
-  height: 22px;
+.nav-icon {
+  width: 18px;
+  height: 18px;
   object-fit: contain;
 }
 
-.cs-nav-item--active {
+.nav-item span {
+  font-size: 11px;
+  color: #fff;
+  font-family: 'Pretendard', sans-serif;
+  font-weight: 400;
+}
+
+.nav-item.active span {
   color: #ff8732;
+}
+
+.nav-icon--white {
+  filter: brightness(0) invert(1);
+}
+
+.nav-item.active .nav-icon {
+  filter: invert(57%) sepia(82%) saturate(600%) hue-rotate(350deg) brightness(102%);
 }

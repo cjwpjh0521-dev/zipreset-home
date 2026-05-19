@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Pretendard:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500&display=swap');
+﻿@import url('https://fonts.googleapis.com/css2?family=Pretendard:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500&display=swap');
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -369,6 +369,7 @@ body {
   width: 9px;
   height: 7px;
   flex-shrink: 0;
+  object-fit: contain;
 }
 
 /* ─── 버튼 영역 ─── */

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Pretendard:wght@400;500;600;700&display=swap');
+﻿@import url('https://fonts.googleapis.com/css2?family=Pretendard:wght@400;500;600;700&display=swap');
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -33,13 +33,17 @@ body {
 .lc-header-back {
   display: flex;
   align-items: center;
-  justify-content: center;
-  width: 37px;
-  height: 48px;
-  font-size: 24px;
-  font-weight: 600;
-  color: #000;
   text-decoration: none;
+}
+
+.lc-back-btn {
+  background: #fff;
+  border: 1px solid #e3e3e3;
+  border-radius: 19.5px;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .lc-header-title {
@@ -75,7 +79,7 @@ body {
   width: 430px;
   height: 428px;
   overflow: hidden;
-  margin-top: 19px;
+  margin-top: 10px;
 }
 
 .lc-hero-img {
@@ -112,6 +116,7 @@ body {
   padding: 0 19px;
   height: 281px;
   scrollbar-width: none;
+  margin-top: 16px;
 }
 
 .lc-scroll-section::-webkit-scrollbar { display: none; }
@@ -134,9 +139,10 @@ body {
 }
 
 .lc-card-img {
-  width: 100%;
-  height: 100%;
+  width: 161px;
+  height: 160px;
   object-fit: cover;
+  display: block;
 }
 
 .lc-card-heart {
@@ -182,6 +188,15 @@ body {
   text-overflow: ellipsis;
 }
 
+.lc-price-line {
+  width: 100%;
+  height: 1px;
+  background: #d9d9d9;
+  border: none;
+  margin: 2px 0 4px;
+  flex-shrink: 0;
+}
+
 .lc-price {
   font-size: 13px;
   font-weight: 600;
@@ -195,15 +210,16 @@ body {
 .lc-price em {
   font-style: normal;
   font-size: 16px;
+  font-weight: 600;
   color: #662626;
 }
 
 /* ─── 상품 그리드 섹션 ─── */
 .lc-grid-section {
-  padding: 27px 17px 0;
+  padding: 14px 17px 0;
   display: flex;
   flex-direction: column;
-  gap: 31px;
+  gap: 16px;
 }
 
 /* 필터 칩 행 */
@@ -214,6 +230,7 @@ body {
   scrollbar-width: none;
   height: 45px;
   gap: 7px;
+  margin-bottom: 31px;
 }
 
 .lc-filter-row::-webkit-scrollbar { display: none; }
@@ -279,6 +296,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-bottom: 17px;
 }
 
 .lc-count {
@@ -316,8 +334,8 @@ body {
 /* 2열 그리드 */
 .lc-product-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 15px 16px;
+  grid-template-columns: 192px 192px;
+  gap: 15px 12px;
   padding-bottom: 20px;
 }
 
@@ -329,7 +347,7 @@ body {
 .lc-grid-img-wrap {
   position: relative;
   width: 100%;
-  aspect-ratio: 192 / 160;
+  height: 160px;
   border: 1px solid rgba(148,148,148,0.11);
   overflow: hidden;
   flex-shrink: 0;
@@ -337,8 +355,11 @@ body {
 
 .lc-grid-img {
   width: 100%;
-  height: 100%;
+  height: 160px;
   object-fit: cover;
+  display: block;
+  border: 1px solid rgba(148,148,148,0.11);
+  flex-shrink: 0;
 }
 
 .lc-grid-point {
@@ -366,7 +387,23 @@ body {
   flex-direction: column;
   gap: 7px;
   padding-top: 1px;
+  padding-left: 1px;
   overflow: hidden;
+}
+
+.lc-grid-info .lc-brand,
+.lc-grid-info .lc-name,
+.lc-grid-info .lc-price-line {
+  width: 100%;
+  height: 1px;
+  background: #d9d9d9;
+  border: none;
+  margin: 2px 0 4px;
+  flex-shrink: 0;
+}
+
+.lc-price {
+  height: auto;
 }
 
 .lc-grid-desc {
@@ -374,7 +411,6 @@ body {
   font-weight: 500;
   color: #000;
   line-height: 20.5px;
-  height: 25px;
   display: flex;
   align-items: center;
   overflow: hidden;
@@ -383,39 +419,57 @@ body {
 }
 
 /* ─── 하단 네비게이션 ─── */
-.lc-bottom-nav {
+.bottom-nav {
   position: fixed;
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
-  width: 430px;
-  height: 83px;
+  width: 100%;
+  max-width: 430px;
   background: #5a2e2a;
-  display: flex;
-  align-items: flex-end;
-  justify-content: space-around;
-  padding: 0 53px 12px;
+  height: 83px;
+  z-index: 100;
 }
 
-.lc-nav-item {
+.nav-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 83px;
+  padding: 0 8px;
+}
+
+.nav-item {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 8px;
+  gap: 10px;
+  cursor: pointer;
   text-decoration: none;
-  color: #fff;
-  font-size: 11px;
-  font-weight: 400;
-  line-height: 16.5px;
-  padding-bottom: 2px;
+  min-width: 46px;
 }
 
-.lc-nav-item img {
-  width: 22px;
-  height: 22px;
+.nav-icon {
+  width: 18px;
+  height: 18px;
   object-fit: contain;
 }
 
-.lc-nav-item--active {
+.nav-item span {
+  font-size: 11px;
+  color: #fff;
+  font-family: 'Pretendard', sans-serif;
+  font-weight: 400;
+}
+
+.nav-item.active span {
   color: #ff8732;
+}
+
+.nav-icon--white {
+  filter: brightness(0) invert(1);
+}
+
+.nav-item.active .nav-icon {
+  filter: invert(57%) sepia(82%) saturate(600%) hue-rotate(350deg) brightness(102%);
 }

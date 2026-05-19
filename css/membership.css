@@ -86,16 +86,15 @@ body {
 
 .hero-text {
   position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
+  left: 18px;
+  top: 53px;
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
   pointer-events: none;
 }
 
 .hero-title {
-  position: absolute;
-  left: 18px;
-  top: 53px;
   font-family: 'Bebas Neue', 'Noto Sans KR', sans-serif;
   font-size: 30px;
   font-weight: 400;
@@ -106,28 +105,23 @@ body {
 }
 
 .hero-sub1 {
-  position: absolute;
-  left: 14px;
-  top: 92px;
   font-family: 'Inter', 'Noto Sans KR', sans-serif;
   font-size: 15px;
   font-weight: 400;
   color: #fff;
+  letter-spacing: -0.9px;
   line-height: 16.2px;
-  width: 278px;
+  width: 265px;
 }
 
 .hero-sub2 {
-  position: absolute;
-  left: 18px;
-  top: 113px;
   font-family: 'Inter', 'Noto Sans KR', sans-serif;
   font-size: 15px;
   font-weight: 400;
   color: #fff;
+  letter-spacing: -0.9px;
   line-height: 16.2px;
-  width: 265px;
-  white-space: pre-wrap;
+  white-space: nowrap;
 }
 
 /* ─── 카드 영역 ─── */

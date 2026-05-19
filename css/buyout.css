@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Noto+Sans+KR:wght@400;500&display=swap');
+﻿@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Noto+Sans+KR:wght@400;500&display=swap');
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -422,26 +422,26 @@ body {
 }
 
 .cta-title {
-  font-family: 'Noto Sans KR', sans-serif;
+  font-family: 'Pretendard', sans-serif;
   font-size: 24px;
-  font-weight: 500;
+  font-weight: 400;
   color: #fff;
   text-align: center;
   line-height: 28px;
   letter-spacing: -1px;
-  width: 252px;
+  white-space: nowrap;
 }
 
 .cta-desc {
-  font-family: 'Noto Sans KR', sans-serif;
+  font-family: 'Pretendard', sans-serif;
   font-size: 15px;
-  font-weight: 500;
+  font-weight: 400;
   color: #fff;
   text-align: center;
   line-height: 28px;
   letter-spacing: -1px;
   width: 252px;
-  margin-bottom: 14px;
+  margin-bottom: 26px;
 }
 
 .cta-btn {
@@ -450,9 +450,9 @@ body {
   background: #ff8732;
   border: none;
   border-radius: 60px;
-  font-family: 'Noto Sans KR', sans-serif;
+  font-family: 'Pretendard', sans-serif;
   font-size: 17px;
-  font-weight: 500;
+  font-weight: 400;
   color: #fff;
   cursor: pointer;
   text-align: center;

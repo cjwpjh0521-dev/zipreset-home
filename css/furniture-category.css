@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Pretendard:wght@400;500;600;700&display=swap');
+﻿@import url('https://fonts.googleapis.com/css2?family=Pretendard:wght@400;500;600;700&display=swap');
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -58,7 +58,7 @@ body {
 
 /* ─── 페이지 타이틀 ─── */
 .fc-page-title {
-  padding: 28px 19px 48px;
+  padding: 15px 19px 10px;
   display: flex;
   align-items: center;
 }
@@ -97,14 +97,18 @@ body {
   position: absolute;
   top: 48px;
   left: 18px;
-  width: 299px;
   display: flex;
   flex-direction: column;
   gap: 8px;
   color: #fff;
   font-size: 23px;
-  font-weight: 600;
+  font-weight: 400;
   line-height: 28px;
+}
+
+.fc-hero-text p {
+  white-space: nowrap;
+  line-height: 1;
 }
 
 /* ─── 추천 상품 가로 스크롤 ─── */
@@ -147,14 +151,6 @@ body {
   object-fit: cover;
 }
 
-.fc-card-point {
-  position: absolute;
-  bottom: 3px;
-  right: 8px;
-  width: 26px;
-  height: 22px;
-  object-fit: contain;
-}
 
 .fc-card-info {
   background: #fff;
@@ -187,6 +183,15 @@ body {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+
+.fc-price-line {
+  width: 100%;
+  height: 1px;
+  background: #d9d9d9;
+  border: none;
+  margin: 2px 0 4px;
+  flex-shrink: 0;
 }
 
 .fc-card-price {
@@ -267,15 +272,15 @@ body {
 .fc-filter-icon-btn {
   width: 39px;
   height: 39px;
-  border-radius: 50%;
+  border-radius: 19.5px;
   border: 1px solid #e3e3e3;
   background: #fff;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 8px 7px 7px 8px;
   flex-shrink: 0;
   cursor: pointer;
-  padding: 0;
   margin-left: auto;
 }
 
@@ -395,38 +400,57 @@ body {
 }
 
 /* ─── 하단 네비게이션 ─── */
-.fc-bottom-nav {
+.bottom-nav {
   position: fixed;
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
-  width: 431px;
-  height: 83px;
+  width: 100%;
+  max-width: 430px;
   background: #5a2e2a;
-  display: flex;
-  align-items: flex-end;
-  justify-content: space-around;
-  padding: 21px 53px 12px;
+  height: 83px;
+  z-index: 100;
 }
 
-.fc-nav-item {
+.nav-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 83px;
+  padding: 0 8px;
+}
+
+.nav-item {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 10px;
+  cursor: pointer;
   text-decoration: none;
-  color: #fff;
-  font-size: 11px;
-  font-weight: 400;
-  line-height: 16.5px;
+  min-width: 46px;
 }
 
-.fc-nav-item img {
-  width: 22px;
-  height: auto;
+.nav-icon {
+  width: 18px;
+  height: 18px;
   object-fit: contain;
 }
 
-.fc-nav-item--active {
+.nav-item span {
+  font-size: 11px;
+  color: #fff;
+  font-family: 'Pretendard', sans-serif;
+  font-weight: 400;
+}
+
+.nav-item.active span {
   color: #ff8732;
+}
+
+.nav-icon--white {
+  filter: brightness(0) invert(1);
+}
+
+.nav-item.active .nav-icon {
+  filter: invert(57%) sepia(82%) saturate(600%) hue-rotate(350deg) brightness(102%);
 }

@@ -50,8 +50,8 @@ body {
 
 .logo {
   display: flex;
-  align-items: center;
-  gap: 1px;
+  align-items: flex-end;
+  gap: 8px;
 }
 
 .logo-txt {
@@ -60,23 +60,13 @@ body {
   color: #5a2e2a;
   font-size: 30px;
   line-height: 1;
-  letter-spacing: -0.5px;
 }
 
 .logo-r {
-  font-family: Arial, sans-serif;
-  font-weight: 700;
-  width: 26px;
-  height: 26px;
-  background: #ff8732;
-  border-radius: 50%;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  color: #fff;
-  font-size: 14px;
-  line-height: 1;
-  margin: 0 3px;
+  width: 28px;
+  height: 30px;
+  object-fit: contain;
+  margin-bottom: 4px;
 }
 
 /* ─── 폼 영역 ─── */
