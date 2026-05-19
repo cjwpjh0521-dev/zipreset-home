@@ -1,0 +1,18 @@
+<svg preserveAspectRatio="none" width="100%" height="100%" overflow="visible" style="display: block;" viewBox="0 0 120 195" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Shape 2">
+<mask id="mask0_0_103" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="120" height="195">
+<rect id="Rectangle 2" width="120" height="195" rx="12" fill="url(#paint0_linear_0_103)"/>
+</mask>
+<g mask="url(#mask0_0_103)">
+<path id="Vector 3" d="M-16.4571 -132.068L80.2286 94.6364L-16.4571 333.273" stroke="var(--stroke-0, white)" stroke-opacity="0.2" stroke-width="70"/>
+</g>
+</g>
+<defs>
+<linearGradient id="paint0_linear_0_103" x1="0" y1="97.5" x2="120" y2="97.5" gradientUnits="userSpaceOnUse">
+<stop stop-color="#BC1B68"/>
+<stop offset="0.346875" stop-color="#C03071"/>
+<stop offset="0.659375" stop-color="#C44579"/>
+<stop offset="1" stop-color="#C85A82"/>
+</linearGradient>
+</defs>
+</svg>

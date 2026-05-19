@@ -1,0 +1,25 @@
+<svg preserveAspectRatio="none" width="100%" height="100%" overflow="visible" style="display: block;" viewBox="0 0 120 195" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Shape 1">
+<mask id="mask0_0_122" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="120" height="195">
+<rect id="Rectangle 2" width="120" height="195" rx="12" fill="url(#paint0_linear_0_122)"/>
+</mask>
+<g mask="url(#mask0_0_122)">
+<ellipse id="Ellipse 7" cx="21.9429" cy="171.511" rx="35.3143" ry="80.2159" fill="url(#paint1_linear_0_122)"/>
+</g>
+</g>
+<defs>
+<linearGradient id="paint0_linear_0_122" x1="1.78814e-06" y1="195" x2="158.068" y2="156.567" gradientUnits="userSpaceOnUse">
+<stop stop-color="#780C67"/>
+<stop offset="0.419792" stop-color="#940967"/>
+<stop offset="0.7375" stop-color="#B10667"/>
+<stop offset="1" stop-color="#D90266"/>
+</linearGradient>
+<linearGradient id="paint1_linear_0_122" x1="56.2286" y1="153.341" x2="-4.79653" y2="144.535" gradientUnits="userSpaceOnUse">
+<stop stop-color="#940967"/>
+<stop offset="0.284375" stop-color="#B10667"/>
+<stop offset="0.560417" stop-color="#B10667"/>
+<stop offset="0.784375" stop-color="#CD0366"/>
+<stop offset="1" stop-color="#E90066"/>
+</linearGradient>
+</defs>
+</svg>
