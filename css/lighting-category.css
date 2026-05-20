@@ -154,8 +154,8 @@ body {
 
 .lc-card-heart {
   position: absolute;
-  bottom: 7px;
-  left: 5px;
+  bottom: 5px;
+  left: 6px;
   width: 24px;
   height: 24px;
   object-fit: contain;
