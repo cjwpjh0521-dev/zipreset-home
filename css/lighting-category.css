@@ -195,15 +195,6 @@ body {
   text-overflow: ellipsis;
 }
 
-.lc-price-line {
-  width: 100%;
-  height: 1px;
-  background: #d9d9d9;
-  border: none;
-  margin: 2px 0 4px;
-  flex-shrink: 0;
-}
-
 .lc-price {
   font-size: 13px;
   font-weight: 600;
@@ -396,17 +387,6 @@ body {
   padding-top: 1px;
   padding-left: 1px;
   overflow: hidden;
-}
-
-.lc-grid-info .lc-brand,
-.lc-grid-info .lc-name,
-.lc-grid-info .lc-price-line {
-  width: 100%;
-  height: 1px;
-  background: #d9d9d9;
-  border: none;
-  margin: 2px 0 4px;
-  flex-shrink: 0;
 }
 
 .lc-price {
