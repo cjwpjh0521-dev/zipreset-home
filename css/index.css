@@ -53,8 +53,14 @@ body {
 }
 .header-icons {
   display: flex;
-  gap: 18px;
+  gap: 19px;
   align-items: center;
+}
+.header-icon {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+  display: block;
 }
 .header-icons svg {
   width: 24px;
