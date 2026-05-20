@@ -325,12 +325,15 @@ body {
   grid-template-columns: 1fr 1fr;
   gap: 15px 16px;
   padding-bottom: 20px;
+  width: 100%;
 }
 
 .fc-grid-card {
   display: flex;
   flex-direction: column;
   width: 100%;
+  min-width: 0;
+  overflow: hidden;
 }
 
 .fc-grid-img-wrap {
