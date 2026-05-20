@@ -322,7 +322,7 @@ body {
 /* 2열 그리드 */
 .fc-product-grid {
   display: grid;
-  grid-template-columns: 192px 192px;
+  grid-template-columns: 1fr 1fr;
   gap: 15px 16px;
   padding-bottom: 20px;
 }
@@ -330,12 +330,12 @@ body {
 .fc-grid-card {
   display: flex;
   flex-direction: column;
-  width: 192px;
+  width: 100%;
 }
 
 .fc-grid-img-wrap {
   position: relative;
-  width: 192px;
+  width: 100%;
   height: 160px;
   border: 1px solid rgba(148,148,148,0.11);
   overflow: hidden;
