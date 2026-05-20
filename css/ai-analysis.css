@@ -219,6 +219,7 @@ body {
 
 .badge-frame {
   background: rgba(55, 20, 20, 0.82);
+  border: 1px solid #fff;
   left: -7px;
   top: 41px;
 }
