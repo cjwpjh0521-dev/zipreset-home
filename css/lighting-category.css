@@ -26,14 +26,21 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 53px;
-  padding: 0 10px;
+  height: 58px;
+  padding: 10px;
 }
 
 .lc-header-back {
   display: flex;
   align-items: center;
+  justify-content: center;
+  width: 35px;
+  height: 48px;
+  font-size: 24px;
+  font-weight: 600;
+  color: #000;
   text-decoration: none;
+  font-family: 'Inter', sans-serif;
 }
 
 .lc-back-btn {
