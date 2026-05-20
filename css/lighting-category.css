@@ -214,6 +214,7 @@ body {
 
 /* ─── 상품 그리드 섹션 ─── */
 .lc-grid-section {
+  width: 100%;
   padding: 14px 17px 0;
   display: flex;
   flex-direction: column;
@@ -332,14 +333,18 @@ body {
 /* 2열 그리드 */
 .lc-product-grid {
   display: grid;
-  grid-template-columns: 192px 192px;
-  gap: 15px 12px;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px 16px;
   padding-bottom: 20px;
+  width: 100%;
 }
 
 .lc-grid-card {
   display: flex;
   flex-direction: column;
+  width: 100%;
+  min-width: 0;
+  overflow: hidden;
 }
 
 .lc-grid-img-wrap {
