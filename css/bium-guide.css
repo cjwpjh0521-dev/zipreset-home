@@ -120,8 +120,8 @@ body {
 .process-title-row {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 22px;
-  padding-left: 34px;
   margin-bottom: 50px;
 }
 
