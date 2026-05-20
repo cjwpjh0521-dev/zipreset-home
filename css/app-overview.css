@@ -20,7 +20,7 @@ body {
 
 /* ─── 헤더 ─── */
 .app-header {
-  height: 48px;
+  height: 44px;
   display: flex;
   align-items: center;
 }
@@ -41,7 +41,7 @@ body {
   text-decoration: none;
   line-height: 1;
   width: 24px;
-  height: 32px;
+  height: 28px;
   display: flex;
   align-items: center;
   justify-content: center;
