@@ -210,7 +210,7 @@ body {
 
 /* ─── 필수 체크리스트 + 폐기 팁 ─── */
 .tips-section {
-  width: 430px;
+  width: 100%;
   height: 270px;
   display: flex;
   justify-content: center;
