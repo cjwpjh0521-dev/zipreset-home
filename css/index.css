@@ -79,6 +79,7 @@ body {
   -webkit-overflow-scrolling: touch;
   display: flex;
   position: relative;
+  height: 431px;
 }
 .banner-wrap::-webkit-scrollbar { display: none; }
 .banner-slide {
