@@ -380,7 +380,7 @@ body {
 
 /* ─── 전문가 상담 섹션 ─── */
 .consult-section {
-  width: 430px;
+  width: 100%;
   background: #fff;
   height: 244px;
   display: flex;
