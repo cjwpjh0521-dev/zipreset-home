@@ -465,3 +465,11 @@ body {
 .nav-item.active .nav-icon {
   filter: invert(57%) sepia(82%) saturate(600%) hue-rotate(350deg) brightness(102%);
 }
+
+/* iOS 세이프 에어리어 */
+@supports (padding-bottom: env(safe-area-inset-bottom)) {
+  .bottom-nav {
+    padding-bottom: env(safe-area-inset-bottom);
+    height: calc(83px + env(safe-area-inset-bottom));
+  }
+}

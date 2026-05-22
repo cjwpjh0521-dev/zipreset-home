@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Pretendard:wght@400;500;600&family=Manrope:wght@700&family=Plus+Jakarta+Sans:wght@400&display=swap');
+﻿@import url('https://fonts.googleapis.com/css2?family=Pretendard:wght@400;500;600&family=Manrope:wght@700&family=Plus+Jakarta+Sans:wght@400&display=swap');
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -291,4 +291,11 @@ main {
 
 .nav-item.active span {
   color: #ff8732;
+}
+/* iOS 세이프 에어리어 */
+@supports (padding-bottom: env(safe-area-inset-bottom)) {
+  .bottom-nav {
+    padding-bottom: env(safe-area-inset-bottom);
+    height: calc(83px + env(safe-area-inset-bottom));
+  }
 }

@@ -420,3 +420,10 @@ body {
 .nav-home-active .nav-home-btn { background: #FF8732; box-shadow: 0 4px 18px rgba(255,135,50,0.45); }
 
 main { padding-bottom: 80px; }
+/* iOS 세이프 에어리어 */
+@supports (padding-bottom: env(safe-area-inset-bottom)) {
+  .bottom-nav {
+    padding-bottom: env(safe-area-inset-bottom);
+    height: calc(83px + env(safe-area-inset-bottom));
+  }
+}
