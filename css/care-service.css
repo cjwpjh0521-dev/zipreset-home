@@ -434,7 +434,7 @@ body {
   width: 100%;
   max-width: 430px;
   background: #5a2e2a;
-  height: 83px;
+  height: 56px;
   z-index: 100;
 }
 
@@ -442,7 +442,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  height: 83px;
+  height: 56px;
   padding: 0 8px;
 }
 
@@ -485,6 +485,6 @@ body {
 @supports (padding-bottom: env(safe-area-inset-bottom)) {
   .bottom-nav {
     padding-bottom: env(safe-area-inset-bottom);
-    height: calc(83px + env(safe-area-inset-bottom));
+    height: calc(56px + env(safe-area-inset-bottom));
   }
 }
