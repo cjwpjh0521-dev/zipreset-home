@@ -49,14 +49,10 @@ body {
   gap: 19px;
 }
 
-.header-icons svg {
+.header-icon {
   width: 24px;
   height: 24px;
-  stroke: #000;
-  fill: none;
-  stroke-width: 1.7;
-  stroke-linecap: round;
-  stroke-linejoin: round;
+  display: block;
 }
 
 /* ─── 타이틀 ─── */
