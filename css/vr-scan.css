@@ -10,11 +10,12 @@ body {
 }
 
 .page-wrap {
-  width: 430px;
+  width: 100%;
+  max-width: 430px;
   min-height: 100vh;
   background: #fff;
   overflow-x: hidden;
-  padding-bottom: 83px;
+  padding-bottom: 56px;
 }
 
 /* ─── 헤더 ─── */
