@@ -134,7 +134,7 @@ body {
 
 .scanner-area {
   position: absolute;
-  top: 50px;
+  top: 32px;
   left: 45px;
   right: 45px;
   display: flex;
