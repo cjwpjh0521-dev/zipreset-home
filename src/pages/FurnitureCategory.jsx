@@ -33,7 +33,7 @@ export default function FurnitureCategory() {
     <div className="page-wrap">
 
       <header className="fc-header">
-        <button className="fc-header-back" onClick={() => navigate('/home')} style={{ background: 'none', border: 'none', cursor: 'pointer' }}>
+        <button className="fc-header-back" onClick={() => navigate('/category')} style={{ background: 'none', border: 'none', cursor: 'pointer' }}>
           &#60;
         </button>
         <h1 className="fc-header-title">가구 카테고리</h1>
