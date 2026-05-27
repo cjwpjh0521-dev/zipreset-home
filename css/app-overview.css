@@ -133,6 +133,10 @@ body {
 .hero-desc {
   white-space: pre;
   margin-top: 0;
+  font-size: 12px;
+  font-family: 'Inter', 'Noto Sans KR', sans-serif;
+  font-weight: 400;
+  line-height: 16.2px;
 }
 
 /* ─── Visual 2: 다크 공간 관리 ─── */
