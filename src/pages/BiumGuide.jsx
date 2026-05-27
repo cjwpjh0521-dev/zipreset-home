@@ -24,14 +24,14 @@ export default function BiumGuide() {
         <h1 className="header-title">비우기 가이드</h1>
       </header>
 
-      <section className="hero-visual">
-        <div className="hero-img-wrap">
-          <img src="/images/code-box.png" alt="비우기 가이드 배경" className="hero-img" />
+      <section className="bg-hero-visual">
+        <div className="bg-hero-img-wrap">
+          <img src="/images/code-box.png" alt="비우기 가이드 배경" className="bg-hero-img" />
         </div>
-        <div className="hero-gradient"></div>
-        <div className="hero-text">
-          <p className="hero-title">비우는 기준을 알려드려요</p>
-          <p className="hero-desc">전문적인 공간 관리를 위한 준비를 시작하세요. 우리의 가이드는 무엇을 남기고 무엇을 비울지 정리하여 원활한 전환을 도와드립니다.</p>
+        <div className="bg-hero-gradient"></div>
+        <div className="bg-hero-text">
+          <p className="bg-hero-title">비우는 기준을 알려드려요</p>
+          <p className="bg-hero-desc">전문적인 공간 관리를 위한 준비를 시작하세요. 우리의 가이드는 무엇을 남기고 무엇을 비울지 정리하여 원활한 전환을 도와드립니다.</p>
         </div>
       </section>
 

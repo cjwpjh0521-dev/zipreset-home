@@ -53,21 +53,21 @@ body {
 }
 
 /* ─── 히어로 비주얼 ─── */
-.hero-visual {
+.bg-hero-visual {
   position: relative;
   width: 430px;
   height: 430px;
   overflow: hidden;
 }
 
-.hero-img-wrap {
+.bg-hero-img-wrap {
   position: absolute;
   inset: 0;
   overflow: hidden;
   pointer-events: none;
 }
 
-.hero-img {
+.bg-hero-img {
   position: absolute;
   width: 108.86%;
   height: 174.17%;
@@ -77,15 +77,13 @@ body {
   max-width: none;
 }
 
-.hero-gradient {
+.bg-hero-gradient {
   position: absolute;
   inset: 0;
   background: linear-gradient(to bottom, rgba(0,0,0,0.32), rgba(0,0,0,0));
 }
 
-
-
-.hero-text {
+.bg-hero-text {
   position: absolute;
   top: 78px;
   left: 35px;
@@ -96,14 +94,14 @@ body {
   color: #fff;
 }
 
-.hero-title {
+.bg-hero-title {
   font-size: 23px;
   font-weight: 500;
   line-height: 28px;
   letter-spacing: -0.45px;
 }
 
-.hero-desc {
+.bg-hero-desc {
   font-size: 15px;
   font-weight: 500;
   line-height: 28px;
