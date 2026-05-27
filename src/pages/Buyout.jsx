@@ -37,7 +37,7 @@ export default function Buyout() {
     <div className="screen">
 
       <header className="bo-header">
-        <button className="back-btn" onClick={() => navigate('/home')} style={{ background: 'none', border: 'none', cursor: 'pointer', padding: 0 }}>
+        <button className="back-btn" onClick={() => navigate('/category')} style={{ background: 'none', border: 'none', cursor: 'pointer', padding: 0 }}>
           <svg viewBox="0 0 24 24" fill="none" stroke="#000" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" style={{ width: '22px', height: '22px' }}>
             <polyline points="15 18 9 12 15 6" />
           </svg>
