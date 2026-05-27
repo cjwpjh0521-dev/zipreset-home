@@ -26,9 +26,8 @@ body {
   background: #ffffff;
   border-radius: 5px;
   overflow: hidden;
-  width: 88vw;
-  max-width: 360px;
-  padding: 36px 28px 30px;
+  width: 330px;
+  padding: 30px 25px 25px;
 }
 
 /* ─── 타이틀 ─── */
@@ -56,12 +55,11 @@ body {
 
 .modal-text {
   font-weight: 400;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 24px;
   color: #2e2e2e;
   text-align: center;
   width: 100%;
-  word-break: keep-all;
 }
 
 /* ─── 버튼 그룹 ─── */
