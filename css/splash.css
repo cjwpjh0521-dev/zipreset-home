@@ -28,6 +28,7 @@ body {
   transition: opacity 0.15s ease;
   -webkit-tap-highlight-color: transparent;
   user-select: none;
+  margin: 0 auto;
 }
 
 .splash-screen:active {
