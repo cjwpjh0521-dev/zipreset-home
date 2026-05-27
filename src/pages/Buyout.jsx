@@ -51,16 +51,16 @@ export default function Buyout() {
       </header>
 
       <section className="bo-hero">
-        <div className="hero-bg-wrap">
-          <img className="hero-bg-img" src="/images/Hero Section-img.png" alt="" />
+        <div className="bo-hero-bg-wrap">
+          <img className="bo-hero-bg-img" src="/images/Hero Section-img.png" alt="" />
         </div>
-        <div className="hero-overlay"></div>
-        <div className="hero-content">
-          <div className="hero-text-box">
-            <h2 className="hero-title">내 가구의 가치를<br />확인하세요</h2>
-            <p className="hero-desc">전문 감정사가 제안하는 합리적인 중고<br />매입 서비스를 지금 경험해보세요.</p>
+        <div className="bo-hero-overlay"></div>
+        <div className="bo-hero-content">
+          <div className="bo-hero-text-box">
+            <h2 className="bo-hero-title">내 가구의 가치를<br />확인하세요</h2>
+            <p className="bo-hero-desc">전문 감정사가 제안하는 합리적인 중고<br />매입 서비스를 지금 경험해보세요.</p>
           </div>
-          <button className="hero-btn">
+          <button className="bo-hero-btn">
             <img src="/images/buyout-btn-icon.png" alt="" className="hero-btn-icon" />
             내 가구 시세 조회하기
           </button>

@@ -63,13 +63,13 @@ body {
   overflow: hidden;
 }
 
-.hero-bg-wrap {
+.bo-hero-bg-wrap {
   position: absolute;
   inset: 0;
   overflow: hidden;
 }
 
-.hero-bg-img {
+.bo-hero-bg-img {
   position: absolute;
   left: -12.5%;
   top: 0;
@@ -79,13 +79,13 @@ body {
   display: block;
 }
 
-.hero-overlay {
+.bo-hero-overlay {
   position: absolute;
   inset: 0;
   background: rgba(0, 0, 0, 0.05);
 }
 
-.hero-content {
+.bo-hero-content {
   position: absolute;
   left: 35px;
   top: 186px;
@@ -95,13 +95,13 @@ body {
   gap: 16px;
 }
 
-.hero-text-box {
+.bo-hero-text-box {
   display: flex;
   flex-direction: column;
   gap: 16px;
 }
 
-.hero-title {
+.bo-hero-title {
   font-family: 'Noto Sans KR', sans-serif;
   font-size: 30px;
   font-weight: 500;
@@ -109,7 +109,7 @@ body {
   line-height: 37.5px;
 }
 
-.hero-desc {
+.bo-hero-desc {
   font-family: 'Noto Sans KR', sans-serif;
   font-size: 14px;
   font-weight: 500;
@@ -118,7 +118,7 @@ body {
   max-width: 240px;
 }
 
-.hero-btn {
+.bo-hero-btn {
   display: flex;
   align-items: center;
   justify-content: center;
