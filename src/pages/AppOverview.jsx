@@ -56,7 +56,7 @@ export default function AppOverview() {
         <div className="hero-brand">ZipReset</div>
         <div className="hero-subtitle">
           <p className="hero-tagline">"비움으로 가치를 찾고, 데이터로 공간을 채우다"</p>
-          <p className="hero-desc">AI 공간 분석과 맞춤형 큐레이션으로 완성하는<br />당신만의 프리미엄 라이프스타일 매니지먼트.</p>
+          <p className="ao-hero-desc">AI 공간 분석과 맞춤형 큐레이션으로 완성하는<br />당신만의 프리미엄 라이프스타일 매니지먼트.</p>
         </div>
       </section>
 
