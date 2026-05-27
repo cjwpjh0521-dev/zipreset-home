@@ -5,14 +5,14 @@ export default function Splash() {
   useEffect(() => {
     const h = document.documentElement
     const b = document.body
-    h.style.background = '#FF8732'
-    b.style.background = '#FF8732'
-    b.style.display = 'flex'
+    h.style.setProperty('background', '#FF8732', 'important')
+    b.style.setProperty('background', '#FF8732', 'important')
+    b.style.setProperty('display', 'flex', 'important')
+    b.style.setProperty('min-height', '100vh', 'important')
+    b.style.setProperty('max-width', 'none', 'important')
+    b.style.setProperty('margin', '0', 'important')
     b.style.justifyContent = 'center'
     b.style.alignItems = 'center'
-    b.style.minHeight = '100vh'
-    b.style.margin = '0'
-    b.style.maxWidth = 'none'
     return () => { h.style.cssText = ''; b.style.cssText = '' }
   }, [])
 
