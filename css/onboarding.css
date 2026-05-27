@@ -68,8 +68,8 @@ body {
 .header-icons svg {
   width: 24px;
   height: 24px;
-  stroke: white;
-  fill: none;
+  stroke: white !important;
+  fill: none !important;
   stroke-width: 1.7;
   stroke-linecap: round;
   stroke-linejoin: round;
@@ -162,7 +162,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 12px;
+  gap: 2px;
   cursor: pointer;
   transition: transform 0.12s ease, opacity 0.12s ease;
   -webkit-tap-highlight-color: transparent;
@@ -175,8 +175,8 @@ body {
 }
 
 .nav-item svg {
-  width: 22px;
-  height: 22px;
+  width: 14px;
+  height: 14px;
   stroke: #000;
   fill: none;
   stroke-width: 2;
@@ -185,7 +185,7 @@ body {
 }
 
 .nav-item span {
-  font-size: 10px;
+  font-size: 8px;
   color: #000;
 }
 
@@ -207,12 +207,12 @@ body {
 
 .nav-home-btn {
   background: #ff8732;
-  border-radius: 16px;
+  border-radius: 14px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 6px 12px;
+  padding: 5px 10px;
   text-decoration: none;
   transition: background 0.12s ease;
 }
@@ -222,14 +222,14 @@ body {
 }
 
 .nav-home-btn svg {
-  width: 26px;
-  height: 23px;
+  width: 17px;
+  height: 15px;
   fill: white;
   stroke: none;
 }
 
 .nav-home-wrap span {
-  font-size: 10px;
+  font-size: 8px;
   color: rgba(0, 0, 0, 0.7);
 }
 

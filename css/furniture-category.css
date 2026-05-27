@@ -383,13 +383,8 @@ body {
   font-size: 12px;
   font-weight: 500;
   color: #000;
-  line-height: 20.5px;
-  height: 25px;
-  display: flex;
-  align-items: center;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
+  line-height: 1.6;
+  display: block;
 }
 
 /* ─── 하단 네비게이션 ─── */
