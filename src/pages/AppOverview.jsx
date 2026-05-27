@@ -48,11 +48,11 @@ export default function AppOverview() {
       </header>
 
       {/* 히어로 */}
-      <section className="hero-visual">
-        <div className="hero-bg-wrap">
-          <img className="hero-bg-img" src="/images/visual-img.png" alt="" />
+      <section className="ao-hero-visual">
+        <div className="ao-hero-bg-wrap">
+          <img className="ao-hero-bg-img" src="/images/visual-img.png" alt="" />
         </div>
-        <div className="hero-gradient"></div>
+        <div className="ao-hero-gradient"></div>
         <div className="hero-brand">ZipReset</div>
         <div className="hero-subtitle">
           <p className="hero-tagline">"비움으로 가치를 찾고, 데이터로 공간을 채우다"</p>
