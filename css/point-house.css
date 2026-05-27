@@ -141,7 +141,7 @@ body {
 /* 카드 배경 */
 .card-purple  { background: linear-gradient(to right, #832388, #932883 51%, #a32e7e); }
 .card-red     { background: linear-gradient(57.85deg, #ff5858 0%, #ff6b6b 49.27%, #ff7d7d 100%); }
-.card-blue    { background: linear-gradient(57.85deg, #0968e5 0%, #0941ab 49.27%, #091970 100%); }
+.ph-card-blue { background: linear-gradient(57.85deg, #0968e5 0%, #0941ab 49.27%, #091970 100%); }
 .card-magenta { background: linear-gradient(57.85deg, #780c67 0%, #940967 42%, #b10667 73.75%, #d90266 100%); }
 .card-pink    { background: linear-gradient(90deg, #bc1b68 0%, #c03071 34.69%, #c44579 65.94%, #c85a82 100%); }
 .card-black   { background: #000; }

@@ -49,7 +49,7 @@ export default function PointHouse() {
             <img className="card-overlay" src="/images/js-img2.png" alt="" />
           </div>
           {/* Card 3: Blue */}
-          <div className="ph-point-card card-blue">
+          <div className="ph-point-card ph-card-blue">
             <img className="card-overlay" src="/images/card-mask-blue1.svg" alt="" />
             <img className="card-overlay" src="/images/card-mask-blue2.svg" alt="" />
             <img className="card-overlay" src="/images/card-mask-blue3.svg" alt="" />
