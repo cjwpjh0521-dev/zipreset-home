@@ -1,5 +1,5 @@
 import { useEffect } from 'react'
-import { useNavigate } from 'react-router-dom'
+import { useNavigate, Link } from 'react-router-dom'
 import '../../css/lighting-category.css'
 
 const scrollCards = [
@@ -67,7 +67,7 @@ export default function LightingCategory() {
       <section className="lc-grid-section">
         <div className="lc-filter-row">
           <button className="lc-chip lc-chip--active">AI 공간 추천</button>
-          <span className="lc-chip-divider"></span>
+          <span className="lc-chip-divider"><img src="/images/lc-divider.png" alt="" /></span>
           {chips.map((chip) => (
             <button className="lc-chip" key={chip}>{chip}</button>
           ))}
@@ -105,6 +105,31 @@ export default function LightingCategory() {
           ))}
         </div>
       </section>
+
+      <nav className="bottom-nav">
+        <div className="nav-inner">
+          <Link to="/home" className="nav-item">
+            <img src="/images/nav-home-mp.png" alt="홈" className="nav-icon" />
+            <span>홈</span>
+          </Link>
+          <div className="nav-item">
+            <img src="/images/nav-cate-mp.svg" alt="카테고리" className="nav-icon" />
+            <span>카테고리</span>
+          </div>
+          <div className="nav-item">
+            <img src="/images/nav-biuom-mp.svg" alt="비움" className="nav-icon" />
+            <span>비움</span>
+          </div>
+          <div className="nav-item active">
+            <img src="/images/nav-cwoom-mp.svg" alt="채움" className="nav-icon" />
+            <span>채움</span>
+          </div>
+          <Link to="/mypage" className="nav-item">
+            <img src="/images/nav-my-mp.svg" alt="마이" className="nav-icon nav-icon--white" />
+            <span>마이</span>
+          </Link>
+        </div>
+      </nav>
 
     </div>
   )
