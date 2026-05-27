@@ -1,8 +1,20 @@
+import { useEffect } from 'react'
 import { useNavigate, Link } from 'react-router-dom'
 import '../../css/onboarding.css'
 
 export default function Onboarding() {
   const navigate = useNavigate()
+
+  useEffect(() => {
+    const b = document.body
+    b.style.background = '#000'
+    b.style.overflow = 'hidden'
+    b.style.maxWidth = '430px'
+    b.style.margin = '0 auto'
+    b.style.minHeight = '100vh'
+    b.style.display = 'block'
+    return () => { b.style.cssText = '' }
+  }, [])
 
   return (
     <div className="screen" onClick={() => { window.location.href = '/signup-guide' }}>
