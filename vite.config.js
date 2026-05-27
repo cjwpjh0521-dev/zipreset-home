@@ -46,7 +46,7 @@ const copyImagesPlugin = {
         if (fs.statSync(srcPath).isDirectory()) {
           copyDir(srcPath, destPath)
         } else {
-          fs.copyFileSync(srcPath, destPath)
+          try { fs.copyFileSync(srcPath, destPath) } catch (_) {}
         }
       }
     }

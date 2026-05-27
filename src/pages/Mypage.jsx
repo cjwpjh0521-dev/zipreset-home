@@ -24,7 +24,7 @@ export default function Mypage() {
       <header className="header">
         <div className="logo">
           <span className="logo-txt">ZIP</span>
-          <img src="/images/logo-r-index.svg" alt="R" className="logo-r" />
+          <img src="/images/logo-r-mark.svg" alt="R" className="logo-r" />
           <span className="logo-txt">ESET</span>
         </div>
         <div className="header-icons">
