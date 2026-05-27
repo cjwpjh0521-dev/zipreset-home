@@ -1,4 +1,4 @@
-﻿@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Pretendard:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Pretendard:wght@400;500;700&display=swap');
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -14,7 +14,7 @@ body {
 }
 
 /* ─── Screen Wrapper ─── */
-.screen {
+#ob-page {
   position: relative;
   width: 100%;
   height: 100dvh;
@@ -22,20 +22,20 @@ body {
 }
 
 /* ─── Background ─── */
-.bg-layer {
+#ob-page .bg-layer {
   position: absolute;
   inset: 0;
   background: #000;
 }
 
-.bg-layer img {
+#ob-page .bg-layer img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   display: block;
 }
 
-.overlay {
+#ob-page .overlay {
   position: absolute;
   inset: 0;
   background: linear-gradient(
@@ -46,7 +46,7 @@ body {
 }
 
 /* ─── Header Icons ─── */
-.header-icons {
+#ob-page .header-icons {
   position: absolute;
   top: 28px;
   right: 17px;
@@ -56,8 +56,8 @@ body {
   z-index: 10;
 }
 
-.header-icons a,
-.header-icons div {
+#ob-page .header-icons a,
+#ob-page .header-icons div {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -65,7 +65,7 @@ body {
   text-decoration: none;
 }
 
-.header-icons svg {
+#ob-page .header-icons svg {
   width: 24px;
   height: 24px;
   stroke: white !important;
@@ -75,13 +75,13 @@ body {
   stroke-linejoin: round;
 }
 
-.header-icons svg.icon-search {
+#ob-page .header-icons svg.icon-search {
   width: 23px;
   height: 22px;
 }
 
 /* ─── Title Box ─── */
-.title-box {
+#ob-page .title-box {
   position: absolute;
   top: 104px;
   left: 50%;
@@ -97,7 +97,7 @@ body {
   z-index: 5;
 }
 
-.brand {
+#ob-page .brand {
   font-family: 'Bebas Neue', sans-serif;
   font-size: 66px;
   font-weight: 400;
@@ -107,7 +107,7 @@ body {
   white-space: nowrap;
 }
 
-.text-content {
+#ob-page .text-content {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -115,7 +115,7 @@ body {
   width: 100%;
 }
 
-.tagline {
+#ob-page .tagline {
   font-family: 'Pretendard', sans-serif;
   font-weight: 700;
   font-size: 32px;
@@ -125,7 +125,7 @@ body {
   text-align: center;
 }
 
-.subtitle {
+#ob-page .subtitle {
   font-family: 'Pretendard', sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -136,7 +136,7 @@ body {
 }
 
 /* ─── Bottom Nav ─── */
-.bottom-nav {
+#ob-page .bottom-nav {
   position: fixed;
   bottom: 0;
   left: 50%;
@@ -151,14 +151,14 @@ body {
   z-index: 10;
 }
 
-.nav-inner {
+#ob-page .nav-inner {
   display: flex;
   width: 100%;
   justify-content: space-around;
   align-items: flex-start;
 }
 
-.nav-item {
+#ob-page .nav-item {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -169,12 +169,12 @@ body {
   user-select: none;
 }
 
-.nav-item:active {
+#ob-page .nav-item:active {
   transform: scale(0.85);
   opacity: 0.6;
 }
 
-.nav-item svg {
+#ob-page .nav-item svg {
   width: 14px;
   height: 14px;
   stroke: #000;
@@ -184,12 +184,12 @@ body {
   stroke-linejoin: round;
 }
 
-.nav-item span {
+#ob-page .nav-item span {
   font-size: 8px;
   color: #000;
 }
 
-.nav-home-wrap {
+#ob-page .nav-home-wrap {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -201,11 +201,11 @@ body {
   user-select: none;
 }
 
-.nav-home-wrap:active {
+#ob-page .nav-home-wrap:active {
   transform: scale(0.88);
 }
 
-.nav-home-btn {
+#ob-page .nav-home-btn {
   background: #ff8732;
   border-radius: 14px;
   display: flex;
@@ -217,25 +217,25 @@ body {
   transition: background 0.12s ease;
 }
 
-.nav-home-wrap:active .nav-home-btn {
+#ob-page .nav-home-wrap:active .nav-home-btn {
   background: #e06f1f;
 }
 
-.nav-home-btn svg {
+#ob-page .nav-home-btn svg {
   width: 17px;
   height: 15px;
   fill: white;
   stroke: none;
 }
 
-.nav-home-wrap span {
+#ob-page .nav-home-wrap span {
   font-size: 8px;
   color: rgba(0, 0, 0, 0.7);
 }
 
 /* iOS 세이프 에어리어 */
 @supports (padding-bottom: env(safe-area-inset-bottom)) {
-  .bottom-nav {
+  #ob-page .bottom-nav {
     padding-bottom: env(safe-area-inset-bottom);
     height: calc(56px + env(safe-area-inset-bottom));
   }

@@ -17,7 +17,7 @@ export default function Onboarding() {
   }, [])
 
   return (
-    <div className="screen" onClick={() => { window.location.href = '/signup-guide' }}>
+    <div className="screen" id="ob-page" onClick={() => { window.location.href = '/signup-guide' }}>
 
       <div className="bg-layer">
         <img src="/images/onboarding-bg.png" alt="인테리어 배경" />

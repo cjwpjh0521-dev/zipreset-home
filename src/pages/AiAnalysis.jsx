@@ -31,7 +31,7 @@ export default function AiAnalysis() {
         </div>
       </header>
 
-      <div className="title-box">
+      <div className="aa-title-box">
         <h1 className="title-main">가구 상태 분석 및 비움</h1>
         <p className="title-sub">촬영 시 AI가 즉시 가치를 평가합니다.</p>
       </div>
