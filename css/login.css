@@ -12,8 +12,7 @@ body {
   min-height: 100vh;
 }
 
-/* ─── Screen ─── */
-.screen {
+#login-page {
   position: relative;
   width: 100%;
   min-height: 100vh;
@@ -21,8 +20,7 @@ body {
   padding-bottom: 40px;
 }
 
-/* ─── 닫기 버튼 ─── */
-.close-btn {
+#login-page .close-btn {
   position: absolute;
   top: 58px;
   right: 22px;
@@ -40,21 +38,20 @@ body {
   text-align: center;
 }
 
-/* ─── 로고 ─── */
-.logo-wrap {
+#login-page .logo-wrap {
   display: flex;
   justify-content: center;
   padding-top: 86px;
   margin-bottom: 44px;
 }
 
-.logo {
+#login-page .logo {
   display: flex;
   align-items: flex-end;
   gap: 8px;
 }
 
-.logo-txt {
+#login-page .logo-txt {
   font-family: Arial, sans-serif;
   font-weight: 700;
   color: #5a2e2a;
@@ -62,20 +59,21 @@ body {
   line-height: 1;
 }
 
-.logo-r {
+#login-page .logo-r {
   width: 34px;
   height: 36px;
   object-fit: contain;
   margin-bottom: 4px;
+  background: none;
+  border-radius: 0;
+  display: block;
 }
 
-/* ─── 폼 영역 ─── */
-.form-wrap {
+#login-page .form-wrap {
   padding: 0 22px;
 }
 
-/* ─── 입력 필드 ─── */
-.input-field {
+#login-page .input-field {
   display: block;
   width: 100%;
   height: 52px;
@@ -89,23 +87,22 @@ body {
   outline: none;
 }
 
-.input-field::placeholder {
+#login-page .input-field::placeholder {
   color: #c5c5c7;
 }
 
-.input-field + .input-field {
+#login-page .input-field + .input-field {
   margin-top: 8px;
 }
 
-/* ─── 아이디/비밀번호 찾기 ─── */
-.find-link-wrap {
+#login-page .find-link-wrap {
   display: flex;
   justify-content: flex-end;
   margin-top: 13px;
   margin-bottom: 50px;
 }
 
-.find-link {
+#login-page .find-link {
   font-size: 14px;
   font-weight: 400;
   color: #666;
@@ -113,8 +110,7 @@ body {
   white-space: pre;
 }
 
-/* ─── 로그인 버튼 ─── */
-.btn-login {
+#login-page .btn-login {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -130,8 +126,7 @@ body {
   cursor: pointer;
 }
 
-/* ─── 소셜 로그인 ─── */
-.social-wrap {
+#login-page .social-wrap {
   display: flex;
   justify-content: center;
   gap: 18px;
@@ -139,7 +134,7 @@ body {
   margin-bottom: 43px;
 }
 
-.social-btn {
+#login-page .social-btn {
   width: 50px;
   height: 50px;
   border-radius: 50%;
@@ -150,40 +145,25 @@ body {
   justify-content: center;
 }
 
-.social-btn svg {
+#login-page .social-btn svg {
   width: 28px;
   height: 28px;
 }
 
-.social-btn span {
+#login-page .social-btn span {
   font-family: Arial, sans-serif;
   font-weight: 700;
   font-size: 19px;
   color: #fff;
 }
 
-.kakao {
-  background: #FEE500;
-}
+#login-page .kakao { background: #FEE500; }
+#login-page .kakao svg { fill: #3C1E1E; }
+#login-page .naver { background: #03C75A; }
+#login-page .point { background: #E8003D; }
+#login-page .apple { background: #000; }
 
-.kakao svg {
-  fill: #3C1E1E;
-}
-
-.naver {
-  background: #03C75A;
-}
-
-.point {
-  background: #E8003D;
-}
-
-.apple {
-  background: #000;
-}
-
-/* ─── 회원가입 버튼 ─── */
-.btn-signup {
+#login-page .btn-signup {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -198,8 +178,7 @@ body {
   cursor: pointer;
 }
 
-/* ─── 하단 링크 ─── */
-.bottom-links {
+#login-page .bottom-links {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -207,14 +186,14 @@ body {
   margin-top: 23px;
 }
 
-.bottom-link {
+#login-page .bottom-link {
   font-size: 14px;
   font-weight: 400;
   color: #777;
   text-decoration: none;
 }
 
-.divider {
+#login-page .divider {
   color: #ccc;
   font-size: 14px;
 }

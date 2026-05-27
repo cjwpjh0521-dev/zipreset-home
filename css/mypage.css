@@ -1,4 +1,4 @@
-﻿@import url('https://fonts.googleapis.com/css2?family=Pretendard:wght@400;500;600&family=Manrope:wght@700&family=Plus+Jakarta+Sans:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pretendard:wght@400;500;600&family=Manrope:wght@700&family=Plus+Jakarta+Sans:wght@400&display=swap');
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -12,15 +12,14 @@ body {
   min-height: 100vh;
 }
 
-.screen {
+#mypage {
   width: 100%;
   min-height: 100vh;
   background: #fff;
   padding-bottom: 78px;
 }
 
-/* ─── 헤더 ─── */
-.header {
+#mypage .header {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -28,7 +27,7 @@ body {
   padding: 0 20px;
 }
 
-.logo {
+#mypage .logo {
   font-family: 'Arial', sans-serif;
   font-weight: 700;
   font-size: 20px;
@@ -39,31 +38,34 @@ body {
   gap: 4px;
 }
 
-.logo-txt { color: #5a2e2a; }
+#mypage .logo-txt { color: #5a2e2a; }
 
-.logo-r {
+#mypage .logo-r {
   width: 18px;
   height: 20px;
   object-fit: contain;
   vertical-align: middle;
   position: relative;
   top: -2px;
+  background: none;
+  border-radius: 0;
+  display: block;
 }
 
-.header-icons {
+#mypage .header-icons {
   display: flex;
   align-items: center;
   gap: 19px;
 }
 
-.header-icon-img {
+#mypage .header-icon-img {
   width: 22px;
   height: 22px;
   object-fit: contain;
   display: block;
 }
 
-.header-icons svg {
+#mypage .header-icons svg {
   width: 22px;
   height: 22px;
   stroke: #000;
@@ -73,13 +75,11 @@ body {
   stroke-linejoin: round;
 }
 
-/* ─── 메인 ─── */
-main {
+#mypage main {
   padding: 0 18px 24px;
 }
 
-/* ─── 프로필 카드 ─── */
-.profile-card {
+#mypage .profile-card {
   background: #fff;
   border-radius: 12px;
   box-shadow: 0px 1px 1px rgba(0,0,0,0.05);
@@ -91,25 +91,25 @@ main {
   margin-bottom: 26px;
 }
 
-.profile-avatar-wrap {
+#mypage .profile-avatar-wrap {
   position: relative;
   flex-shrink: 0;
 }
 
-.profile-avatar {
+#mypage .profile-avatar {
   width: 96px;
   height: 92px;
   border-radius: 50%;
   overflow: hidden;
 }
 
-.profile-avatar svg {
+#mypage .profile-avatar svg {
   width: 96px;
   height: 92px;
   display: block;
 }
 
-.edit-btn {
+#mypage .edit-btn {
   position: absolute;
   bottom: -2px;
   right: -4px;
@@ -125,12 +125,12 @@ main {
   padding: 0;
 }
 
-.edit-btn svg {
+#mypage .edit-btn svg {
   width: 12px;
   height: 12px;
 }
 
-.profile-info {
+#mypage .profile-info {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -138,7 +138,7 @@ main {
   width: 100%;
 }
 
-.profile-name-row {
+#mypage .profile-name-row {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -147,7 +147,7 @@ main {
   width: 100%;
 }
 
-.profile-name {
+#mypage .profile-name {
   font-family: 'Manrope', sans-serif;
   font-size: 27px;
   font-weight: 700;
@@ -156,7 +156,7 @@ main {
   line-height: 1.1;
 }
 
-.profile-role {
+#mypage .profile-role {
   font-family: 'Pretendard', sans-serif;
   font-size: 14px;
   font-weight: 400;
@@ -165,7 +165,7 @@ main {
   line-height: normal;
 }
 
-.profile-email {
+#mypage .profile-email {
   font-family: 'Plus Jakarta Sans', sans-serif;
   font-size: 14px;
   font-weight: 400;
@@ -173,7 +173,7 @@ main {
   line-height: normal;
 }
 
-.btn-manage {
+#mypage .btn-manage {
   display: inline-block;
   background: #121212;
   color: #fff;
@@ -188,12 +188,11 @@ main {
   margin-top: 4px;
 }
 
-/* ─── 메뉴 섹션 ─── */
-.menu-section {
+#mypage .menu-section {
   margin-bottom: 4px;
 }
 
-.menu-section-title {
+#mypage .menu-section-title {
   font-family: 'Pretendard', sans-serif;
   font-size: 22px;
   font-weight: 600;
@@ -205,13 +204,13 @@ main {
   gap: 6px;
 }
 
-.arrow {
+#mypage .arrow {
   font-size: 15px;
   color: #000;
   font-weight: 400;
 }
 
-.menu-grid {
+#mypage .menu-grid {
   display: flex;
   flex-wrap: wrap;
   column-gap: 103px;
@@ -219,7 +218,7 @@ main {
   margin-bottom: 20px;
 }
 
-.menu-link {
+#mypage .menu-link {
   font-family: 'Pretendard', sans-serif;
   font-size: 16px;
   font-weight: 500;
@@ -229,31 +228,30 @@ main {
   white-space: nowrap;
 }
 
-.menu-link:hover {
+#mypage .menu-link:hover {
   color: #ff8732;
 }
 
-.menu-grid-2col {
+#mypage .menu-grid-2col {
   justify-content: space-between;
   flex-wrap: nowrap;
   align-items: flex-start;
   row-gap: 0;
 }
 
-.menu-col {
+#mypage .menu-col {
   display: flex;
   flex-direction: column;
   gap: 27px;
 }
 
-.divider {
+#mypage .divider {
   border: none;
   border-top: 0.5px solid #e0e0e0;
   margin-bottom: 20px;
 }
 
-/* ─── 하단 내비게이션 ─── */
-.bottom-nav {
+#mypage .bottom-nav {
   position: fixed;
   bottom: 0;
   left: 50%;
@@ -265,7 +263,7 @@ main {
   z-index: 100;
 }
 
-.nav-inner {
+#mypage .nav-inner {
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -273,7 +271,7 @@ main {
   padding: 0 8px;
 }
 
-.nav-item {
+#mypage .nav-item {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -283,25 +281,25 @@ main {
   min-width: 46px;
 }
 
-.nav-icon {
+#mypage .nav-icon {
   width: 18px;
   height: 18px;
   object-fit: contain;
 }
 
-.nav-item span {
+#mypage .nav-item span {
   font-size: 11px;
   color: #fff;
   font-family: 'Pretendard', sans-serif;
   font-weight: 400;
 }
 
-.nav-item.active span {
+#mypage .nav-item.active span {
   color: #ff8732;
 }
-/* iOS 세이프 에어리어 */
+
 @supports (padding-bottom: env(safe-area-inset-bottom)) {
-  .bottom-nav {
+  #mypage .bottom-nav {
     padding-bottom: env(safe-area-inset-bottom);
     height: calc(56px + env(safe-area-inset-bottom));
   }

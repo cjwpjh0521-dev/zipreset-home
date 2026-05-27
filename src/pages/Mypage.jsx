@@ -19,7 +19,7 @@ export default function Mypage() {
   }, [])
 
   return (
-    <div className="screen">
+    <div className="screen" id="mypage">
 
       <header className="header">
         <div className="logo">

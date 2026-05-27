@@ -15,7 +15,7 @@ export default function LoginEmpty() {
   }, [])
 
   return (
-    <div className="screen">
+    <div className="screen" id="le-page">
 
       <button className="close-btn" onClick={() => navigate(-1)}>✕</button>
 

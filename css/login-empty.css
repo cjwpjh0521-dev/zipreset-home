@@ -12,8 +12,7 @@ body {
   min-height: 100vh;
 }
 
-/* ─── Screen ─── */
-.screen {
+#le-page {
   position: relative;
   width: 100%;
   min-height: 100vh;
@@ -21,8 +20,7 @@ body {
   padding-bottom: 40px;
 }
 
-/* ─── 닫기 버튼 ─── */
-.close-btn {
+#le-page .close-btn {
   position: absolute;
   top: 58px;
   right: 22px;
@@ -40,21 +38,20 @@ body {
   text-align: center;
 }
 
-/* ─── 로고 ─── */
-.logo-wrap {
+#le-page .logo-wrap {
   display: flex;
   justify-content: center;
   padding-top: 86px;
   margin-bottom: 44px;
 }
 
-.logo {
+#le-page .logo {
   display: flex;
   align-items: flex-end;
   gap: 8px;
 }
 
-.logo-txt {
+#le-page .logo-txt {
   font-family: Arial, sans-serif;
   font-weight: 700;
   color: #5a2e2a;
@@ -62,20 +59,21 @@ body {
   line-height: 1;
 }
 
-.logo-r {
+#le-page .logo-r {
   width: 34px;
   height: 36px;
   object-fit: contain;
   margin-bottom: 4px;
+  background: none;
+  border-radius: 0;
+  display: block;
 }
 
-/* ─── 폼 영역 ─── */
-.form-wrap {
+#le-page .form-wrap {
   padding: 0 22px;
 }
 
-/* ─── 입력 필드 (빈 상태) ─── */
-.input-field {
+#le-page .input-field {
   display: block;
   width: 100%;
   height: 52px;
@@ -89,24 +87,23 @@ body {
   outline: none;
 }
 
-.input-field::placeholder {
+#le-page .input-field::placeholder {
   color: #c5c5c7;
   font-size: 15px;
 }
 
-.input-field + .input-field {
+#le-page .input-field + .input-field {
   margin-top: 8px;
 }
 
-/* ─── 아이디/비밀번호 찾기 ─── */
-.find-link-wrap {
+#le-page .find-link-wrap {
   display: flex;
   justify-content: flex-end;
   margin-top: 13px;
   margin-bottom: 50px;
 }
 
-.find-link {
+#le-page .find-link {
   font-size: 14px;
   font-weight: 400;
   color: #666;
@@ -114,8 +111,7 @@ body {
   white-space: pre;
 }
 
-/* ─── 로그인 버튼 ─── */
-.btn-login {
+#le-page .btn-login {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -131,8 +127,7 @@ body {
   cursor: pointer;
 }
 
-/* ─── 소셜 로그인 ─── */
-.social-wrap {
+#le-page .social-wrap {
   display: flex;
   justify-content: center;
   gap: 18px;
@@ -140,7 +135,7 @@ body {
   margin-bottom: 43px;
 }
 
-.social-btn {
+#le-page .social-btn {
   width: 50px;
   height: 50px;
   border-radius: 50%;
@@ -151,26 +146,25 @@ body {
   justify-content: center;
 }
 
-.social-btn svg {
+#le-page .social-btn svg {
   width: 28px;
   height: 28px;
 }
 
-.social-btn span {
+#le-page .social-btn span {
   font-family: Arial, sans-serif;
   font-weight: 700;
   font-size: 19px;
   color: #fff;
 }
 
-.kakao { background: #fee500; }
-.kakao svg { fill: #3c1e1e; }
-.naver { background: #03c75a; }
-.point { background: #e8003d; }
-.apple { background: #000; }
+#le-page .kakao { background: #fee500; }
+#le-page .kakao svg { fill: #3c1e1e; }
+#le-page .naver { background: #03c75a; }
+#le-page .point { background: #e8003d; }
+#le-page .apple { background: #000; }
 
-/* ─── 회원가입 버튼 ─── */
-.btn-signup {
+#le-page .btn-signup {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -185,8 +179,7 @@ body {
   cursor: pointer;
 }
 
-/* ─── 하단 링크 ─── */
-.bottom-links {
+#le-page .bottom-links {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -194,14 +187,14 @@ body {
   margin-top: 23px;
 }
 
-.bottom-link {
+#le-page .bottom-link {
   font-size: 14px;
   font-weight: 400;
   color: #777;
   text-decoration: none;
 }
 
-.divider {
+#le-page .divider {
   color: #ccc;
   font-size: 14px;
 }

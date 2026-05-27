@@ -5,7 +5,7 @@ export default function Login() {
   const navigate = useNavigate()
 
   return (
-    <div className="screen">
+    <div className="screen" id="login-page">
 
       <button className="close-btn" onClick={() => navigate(-1)}>✕</button>
 
