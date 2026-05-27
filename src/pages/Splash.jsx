@@ -3,7 +3,9 @@ import '../../css/splash.css'
 
 export default function Splash() {
   useEffect(() => {
+    const h = document.documentElement
     const b = document.body
+    h.style.background = '#FF8732'
     b.style.background = '#FF8732'
     b.style.display = 'flex'
     b.style.justifyContent = 'center'
@@ -11,7 +13,7 @@ export default function Splash() {
     b.style.minHeight = '100vh'
     b.style.margin = '0'
     b.style.maxWidth = 'none'
-    return () => { b.style.cssText = '' }
+    return () => { h.style.cssText = ''; b.style.cssText = '' }
   }, [])
 
   return (
